@@ -103,4 +103,4 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:chipmunk1222/chipmunk1222.github.io.git
-  branch: master
+  branch: main
