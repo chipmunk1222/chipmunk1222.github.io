@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'starry sky';
+  src: url('../font/starry.ttf') format('truetype');
+}
+
+.cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space){
+  background-color: rgba(255,255,255,.5);
+  backdrop-filter: blur(4px);
+  border-radius: 15px;
+}

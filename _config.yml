@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: chipmunks' Blog
+title: chipmunkの知识宇宙
 subtitle: ""
-description: ""
+description:
 keywords:
-author: John Doe
-language: en
+author: chipmunk
+language: zh-CN
 timezone: ""
 
 # URL
@@ -105,3 +105,7 @@ deploy:
   type: git
   repo: git@github.com:chipmunk1222/chipmunk1222.github.io.git
   branch: main
+
+server:
+  port: 4000
+  livereload: true
