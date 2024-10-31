@@ -5,6 +5,58 @@
 
 .cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space){
   background-color: rgba(255,255,255,.5);
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
   border-radius: 15px;
+  border:solid 2px rgb(103, 171, 238)
+}
+
+/* 一图流banner页脚修改 */
+/* 页脚与头图透明 */
+#footer {
+  background: transparent !important;
+}
+#page-header {
+  background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+  background: transparent !important;
+}
+#page-header::before {
+  background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
+
+/* 导航栏魔改 */
+/* 一级菜单居中 */
+#nav .menus_items {
+  position: absolute !important;
+  width: fit-content !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) !important;
+}
+/* 子菜单横向展示 */
+#nav .menus_items .menus_item:hover .menus_item_child { 
+  display: flex !important;
+}
+/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+  left: -125px;
+}
+.menus_items .menus_item:nth-child(3) .menus_item_child {
+  left: -60px;
+}
+
+/* 自定义加载条图像 */
+.loading-img {
+  background: url(/img/avatar.jpg) no-repeat center center;
+  background-size: cover;
 }
