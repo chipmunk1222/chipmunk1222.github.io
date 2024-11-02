@@ -3,8 +3,8 @@
   src: url('../font/starry.ttf') format('truetype');
 }
 
-.cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space){
-  background-color: rgba(255,255,255,.5);
+#recent-posts > .recent-post-item{
+  background-color: rgba(255,255,255,.9);
   /* backdrop-filter: blur(4px); */
   border-radius: 15px;
   border:solid 2px rgb(103, 171, 238)
@@ -20,20 +20,20 @@
 }
 
 /* 白天模式遮罩透明 */
-#footer::before {
+/* #footer::before {
   background: transparent !important;
 }
 #page-header::before {
   background: transparent !important;
-}
+} */
 
 /* 夜间模式遮罩透明 */
-[data-theme="dark"] #footer::before {
+/* [data-theme="dark"] #footer::before {
   background: transparent !important;
 }
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
-}
+} */
 
 /* 导航栏魔改 */
 /* 一级菜单居中 */
@@ -41,7 +41,7 @@
   position: absolute !important;
   width: fit-content !important;
   left: 50% !important;
-  transform: translate(-50%,-50%) !important;
+  transform: translate(-50%) !important;
 }
 /* 子菜单横向展示 */
 #nav .menus_items .menus_item:hover .menus_item_child { 
