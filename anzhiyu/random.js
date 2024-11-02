@@ -1,1 +1,1 @@
-var posts=["2024/09/26/hello-world/","2024/10/22/第一篇文章/","2024/10/22/第三篇文章/","2024/10/22/第二篇文章 /","2024/10/22/第六篇文章/","2024/10/22/第五篇文章/","2024/10/22/第七篇文章/","2024/10/22/第四篇文章/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["2024/09/26/hello-world/","2024/10/22/第一篇文章/","2024/10/22/第七篇文章/","2024/10/22/第三篇文章/","2024/10/22/第二篇文章 /","2024/10/22/第四篇文章/","2024/10/22/第五篇文章/","2024/10/22/第六篇文章/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
