@@ -420,6 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (currentTop > 56) {
         if (flag === '') {
           $header.classList.add('nav-fixed')
+          // $header.classList.add('nav-visible')
           $rightside.classList.add('rightside-show')
         }
 
@@ -439,7 +440,8 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         flag = ''
         if (currentTop === 0) {
-          $header.classList.remove('nav-fixed', 'nav-visible')
+          $header.classList.remove('nav-fixed')
+          $header.classList.add('nav-visible')
         }
         $rightside.classList.remove('rightside-show')
       }
@@ -857,9 +859,11 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+
   const justifiedIndexPostUI = () => {
     const recentPostsElement = document.getElementById('recent-posts')
     if (!(recentPostsElement && recentPostsElement.classList.contains('masonry'))) return
+
 
     const init = () => {
       const masonryItem = new InfiniteGrid.MasonryInfiniteGrid('.recent-post-items', {
