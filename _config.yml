@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: chipmunkの知识宇宙
+title: chipmunk
 subtitle: ""
 description:
 keywords:
@@ -105,7 +105,7 @@ search:
 
 #首页顶部磁贴
 magnet:
-  enable: true
+  enable: false
   priority: 1
   enable_page: /
   type: categories
@@ -170,3 +170,8 @@ algolia:
     - slug
     - tags
     - title
+
+# 音乐插件
+aplayer: 
+  meting: true
+  asset_inject: false

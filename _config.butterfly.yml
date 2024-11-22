@@ -13,28 +13,31 @@ nav:
   logo: # image
   display_title: true
   # Whether to fix navigation bar
-  fixed: false
+  fixed: true
 
 # Menu 目錄
 menu:
-  首页: / || fas fa-home
-  文章||fas fa-list || hide:
-    归档: /archives/ || fas fa-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
-    随便逛逛: /random/ || fas fa-random
-  百宝箱||fas fa-list || hide:
-    奇怪的网站: /music/ || fas fa-music
-    常用的库: /movies/ || fas fa-video
-  友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  首页: / || icon-home || faa-tada
+  文章|| icon-page || faa-tada || hide:
+    归档: /archives/ || icon-bookshelf || faa-tada
+    标签: /tags/ || icon-tag || faa-tada
+    分类: /categories/ || icon-category || faa-tada
+    随便逛逛: /random/ || icon-random || faa-tada
+  休闲||icon-coffee || faa-tada || hide:
+    音乐馆: /music/ || icon-music || faa-tada
+    追番: /movies/ || icon-zhuifan || faa-tada
+  百宝箱|| icon-gift || faa-tada || hide:
+    画廊: /photos/ || icon-photo || faa-tada
+    资源: /resources/ || icon-resource || faa-tada
+  友人帐: /link/ || icon-friend || faa-tada
+  关于: /about/ || icon-personal || faa-tada
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: light
+  theme: pale night
   macStyle: true
   # Code block height limit (unit: px)
   height_limit: 200
@@ -68,10 +71,10 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: transparent
+default_top_img: false
 
 # The banner image of index page
-index_img: 
+index_img: false
 
 # The banner image of archive page
 archive_img: transparent
@@ -135,12 +138,12 @@ post_meta:
   page: # Home Page
     date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
-    categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    categories: false # true or false 主頁是否顯示分類
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     # Choose: left / center
-    position: left
+    position: center
     # Choose: created / updated / both
     date_type: both
     # Choose: date / relative
@@ -156,9 +159,9 @@ post_meta:
 # The top_img settings of home page
 # default: top img - full screen, site info - middle
 # The position of site info, eg: 300px/300em/300rem/10%
-index_site_info_top:
+index_site_info_top: 
 # The height of top_img, eg: 300px/300em/300rem
-index_top_img_height:
+index_top_img_height: 
 
 # The subtitle on homepage
 subtitle:
@@ -198,7 +201,7 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   # If you set method to 2 or 3, the length need to config
   length: 500
 
@@ -228,7 +231,7 @@ reward:
   text:
   QR_code:
     # - img: /img/wechat.jpg
-    #   link:
+    #   link: 
     #   text: wechat
     # - img: /img/alipay.jpg
     #   link:
@@ -258,7 +261,7 @@ post_pagination: 1
 
 # Displays outdated notice for a post
 noticeOutdate:
-  enable: false
+  enable: true
   # Style: simple / flat
   style: flat
   # When will it be shown
@@ -455,7 +458,7 @@ darkmode:
   end: # 22
 
 # Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -475,7 +478,7 @@ anchor:
   # When you scroll, the URL will update according to header id.
   auto_update: false
   # Click the headline to scroll and update the anchor
-  click_to_scroll: false
+  click_to_scroll: true
 
 photofigcaption: false
 
@@ -488,7 +491,7 @@ copy:
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
@@ -533,7 +536,7 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use: algolia_search
+  use: local_search
   placeholder: '搜尋'
 
   # Algolia Search
@@ -861,26 +864,28 @@ display_mode: light
 
 # Configuration for beautifying the content of the article
 beautify:
-  enable: false
+  enable: true
   # Specify the field to beautify (site or post)
   field: post
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
-  title_prefix_icon:
+  title_prefix_icon: '\f863'
   # Specify the color of the title prefix icon, such as '#F47466'
-  title_prefix_icon_color:
+  title_prefix_icon_color: "#F47466"
 
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
+  global_font_size: 15px
   code_font_size:
-  font_family:
+  # font_family: Arial, Roboto, square-black, starry sky,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial, sans-serif
+  font_family: hanchanbanyuanti,jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
   code_font_family:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
-  font_family: starry sky, sans-serif
+  # font_family: Arial, Merriweather, square-black,starry sky,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial, sans-serif
+  font_family: hanchanbanyuanti,jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
 
 # The setting of divider icon
 hr_icon:
@@ -961,7 +966,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: medium_zoom
 
 # --------------------------------------
 # Tag Plugins settings
@@ -1000,6 +1005,7 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
+  # style: disabled
   style: flat
   icons: true
   border_radius: 3
@@ -1086,10 +1092,17 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/nav_menu.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/progress_bar.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/page_wave.css"  media="defer" onload="this.media='all'">
+    # - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4732727_6plr38b09gk.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-  # - <script src="/js/badage.js"  defer></script>
-    # - <script src="/xxx.js"></script>
+    - <script async src="//at.alicdn.com/t/c/font_4732727_1m21a74zx4o.js"></script>
+    # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    - <script src="/js/badage.js"  defer></script>
+    - <script src="/js/nav.js" defer></script>
     # - <script src="xxxx"></script>
 
 # CDN Settings
@@ -1142,7 +1155,7 @@ CDN:
     # katex:
     # katex_copytex:
     # lazyload:
-    # local_search: 
+    local_search: true
     # main:
     # main_css:
     # mathjax:
@@ -1187,18 +1200,35 @@ swiper:
 
 # wowjs动画
 wowjs:
-  enable: true #控制动画开关。true是打开，false是关闭
+  enable: false #控制动画开关。true是打开，false是关闭
   priority: 10 #过滤器优先级
   mobile: false #移动端是否启用，默认移动端禁用
   animateitem:
-    - class: recent-post-item #必填项，需要添加动画的元素的class
-      style: animate__zoomIn #必填项，需要添加的动画
-      duration: 1.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
-      delay: .5s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
-      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
-      iteration: 1 #选填项，动画重复的次数
+    # - class: recent-post-item #必填项，需要添加动画的元素的class
+    #   style: animate__zoomIn #必填项，需要添加的动画
+    #   duration: 100s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+    #   delay: .3s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+    #   offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+    #   iteration: 1 #选填项，动画重复的次数
     - class: card-widget
       style: animate__zoomIn
   animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
   wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
   wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
+
+
+# tag-plugins-plus
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.png #link_card标签默认的图标图片
+  CDN:
+    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css

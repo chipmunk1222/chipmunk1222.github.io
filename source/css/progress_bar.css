@@ -52,6 +52,13 @@
   transition: 0.3s;
   top: -8px;
 }
+
+/* 自定义加载条图像 */
+.loading-img {
+  background: url(/img/avatar.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
