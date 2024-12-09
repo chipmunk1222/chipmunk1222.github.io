@@ -177,9 +177,51 @@ app.mount('#app')
 ## 组件递归
 一个单文件组件可以通过它的文件名被其自己所引用。例如：名为 `FooBar.vue` 的组件可以在其模板中用 `<FooBar/>` 引用它自己
 ```js
-import { FooBar as FooBarChild } from './components'
+<!-- Comment.vue -->
+<template>
+  <div>
+    <p>{{ comment.text }}</p>
+    <div v-if="comment.replies">
+      <Comment v-for="reply in comment.replies" :key="reply.id" :comment="reply" />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Comment',
+  props: {
+    comment: {
+      type: Object,
+      required: true
+    }
+  }
+};
+</script>
 ```
 
+## 动态参数
+动态参数允许你在模板中动态绑定事件或者方法，使用动态参数可以做到动态修改属性名！(不是属性的值)，具体实现方式是使用`[]`来绑定属性名
+```js
+<!--
+注意，参数表达式有一些约束，
+参见下面“动态参数值的限制”与“动态参数语法的限制”章节的解释
+-->
+<a v-bind:[attributeName]="url"> ... </a>
+
+<!-- 简写 -->
+<a :[attributeName]="url"> ... </a>
+```
+还可以绑定方法名
+```js
+<a v-on:[eventName]="doSomething"> ... </a>
+
+<!-- 简写 -->
+<a @[eventName]="doSomething"> ... </a>
+```
+{% note warning flat %}
+使用动态参数时，需保证表达式的值为一个字符串且不支持`null`，此外，空格可引号都是不被允许的
+{% endnote %}
 # Vue基本指令
 ## v-html/v-text
 {% tabs html-text %}

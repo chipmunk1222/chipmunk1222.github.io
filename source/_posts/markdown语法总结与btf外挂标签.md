@@ -258,9 +258,9 @@ I think I'll use it to format all of my documents from now on.
 {% tabs picture %}
 <!-- tab 标签示例@icon -->
 ```
-![这是图片](/source/img/bg4.jpg "Magic Gardens")
+![这是图片](/img/bg4.jpg "Magic Gardens")
 
-[![这是带链接的图片](/source/img/bg4.jpg "Magic Gardens")](https://markdown.com.cn)
+[![这是带链接的图片](/img/bg4.jpg "Magic Gardens")](https://markdown.com.cn)
 ```
 <!-- endtab -->
 <!-- tab 渲染结果@icon -->
