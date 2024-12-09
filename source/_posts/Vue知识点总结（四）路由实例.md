@@ -92,6 +92,7 @@ createApp(App)
 - `redirect`:自定义重定向路径
 - `alias`:路由别名,路由别名定义的路径等同于`path`中的路径
 - `children`:定义嵌套路由，规则等同于顶级路由
+- `meta`:路由元信息，用以将格外信息如标题等附加到路由上
 
 示例：
 ```js
@@ -100,10 +101,11 @@ createApp(App)
   name: 'Home', 
   component: HomePage, 
   alias: ['/start', '/begin'], 
-  meta: { requiresAuth: true } 
+  meta: { requiresAuth: true }  // 只有经过身份验证的用户才能创建帖子
 },
 ```
 在`Vue2`中可以使用`this.$route`实例成员获取当前页面的路由信息，在`Vue3`中使用`useRoute()`函数获取路由信息
+
 {% note warning flat %}
 在最后配置`path: "*"`用来匹配`404`页面
 {% endnote %}
@@ -116,6 +118,26 @@ createApp(App)
 >1. `hash`模式：在具体路径前添加一个`#`，可以会对`SEO`造成一定影响，配置`createWebHashHistory()`
 2. `Memory`模式：适合`node`环境和`SSR`，使用`createMemoryHistory()`创建
 3. `Html5`模式：最"正常"的模式，配置`createWebHistory()`创建
+
+### 路由懒加载
+当打包构建应用时，JavaScript 包会变得非常大，影响页面加载。如果我们能把不同路由对应的组件分割成不同的代码块，然后当路由被访问的时候才加载对应组件，这样就会更加高效。
+
+具体的做法是将组件的静态导入改为动态导入：  
+```js
+// 将
+import UserDetails from './views/UserDetails.vue'
+// 替换成
+const UserDetails = () => import('./views/UserDetails.vue')
+
+const router = createRouter({
+  // ...
+  routes: [
+    { path: '/users/:id', component: UserDetails }
+    // 或在路由定义里直接使用它
+    { path: '/users/:id', component: () => import('./views/UserDetails.vue') },
+  ],
+})
+``` 
 
 # 路由匹配
 在完成了路由的创建以及配置后，下一步就是如何在具体的页面中使用路由进行跳转，路由跳转的本质是往浏览器的历史记录中添加历史，然后通过在路由中`push`完成跳转操作，本节将围绕`push()`、`<router-link>`以及`<router-view>`展开
@@ -181,4 +203,77 @@ router.push({
 
 在`router`中可添加配置项`linkActiveClass`和`linkExactActiveClass`可以手动配置激活状态下的类名
 # 路由守卫
+路由守卫，用于在路由跳转的时候添加某些副作用，根据触发时机可以分为前置守卫或后置守卫，根据守卫范围可分为全局守卫或局部守卫
+## 全局前置守卫
+可以使用`router.beforeEach()`创建一个全局前置守卫
+语法：
+```js
+const router = createRouter({ ... })
 
+router.beforeEach((to, from) => {
+  // ...
+  // 返回 false 以取消导航
+  return false
+})
+```
+>参数：
+- `to`：表示即将进入的目标
+- `from`：表示离开的对象
+返回值：
+- `false`: 表示取消该次跳转
+- `{name:'routername'}`:表示重定向到目标路由
+- `none`:没有返回值表示路由是有效的
+
+## 全局后置钩子
+不同于前置守卫，后置钩子并不会改变导航本身，它们主要的用途是更改页面标题，分析页面信息等辅助功能
+语法：
+```js
+router.afterEach((to, from) => {
+  // 表达式 
+})
+```
+
+## 路由独享守卫
+在具体路由配置项(`routes`)中定义`beforeEnter`配置项
+
+该守卫只在进入该路由时触发，不会在`params`、`query`、`hash`改变时触发，即只有跨越配置项时触发
+定义语法：
+```js
+const routes = [
+  {
+    path: '/users/:id',
+    component: UserDetails,
+    beforeEnter: (to, from) => {
+      // reject the navigation
+      return false
+    },
+  },
+]
+```
+{% note info flat %}
+在嵌套路由中，如果路由独享守卫被定义在父级路由中，则子级路由间的跳转不会触发路由独享守卫
+{% endnote %}
+
+## 组件内路由守卫
+可在具体组件内部定义组件内守卫，`router`提供了三个组件内守卫的`api`,分别是：
+>- `beforeRouteEnter`:在渲染组件前调用
+- `beforeRouteUpdate`:组件动态参数改变时调用
+- `beforeRouteLeave`:离开组件渲染时调用
+
+在组合式`api`中提供了`onBeforeRouteUpdate()`和`onBeforeRouteLeave()`分别添加`update`和`leave`守卫
+
+## 路由守卫触发流程
+>1. 导航触发
+2. 离开的组件触发`beforeRouteLeave`
+3. 全局`beforeEach`守卫
+4. 重用组件的`beforeRouteUpdate`
+5. 独享配置项中的`beforeEnter`
+6. 解析异步路由组件
+7. 进入的组件触发`beforeRouteEnter`
+8. 导航确认
+9. 全局`afterEach`钩子
+10. 触发`DOM`更新
+
+{% note warning flat %}
+不要在路由守卫中修改具体组件的`DOM`，如果要做全局性判断，则在外层进行修改，否则在对应组件的生命周期内进行修改，任何路由守卫都不支持或者不建议直接操作导航对象的`DOM`
+{% endnote %}
