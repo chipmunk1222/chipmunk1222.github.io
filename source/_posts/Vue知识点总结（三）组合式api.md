@@ -251,6 +251,20 @@ const vMyDirective = {
 </template>
 ```
 
+## 生命周期钩子
+在`<setup>`中取消了选项式中生命周期的配置项，取而代之的是一系列生命周期函数
+生命周期函数一览
+>1. `onMounted()`：在组件被挂载时调用
+2. `onUpdated()`：在组件更新时调用
+3. `onUnmounted()`：在组件被卸载时调用
+4. `onBeforeMount()`：在组件挂载前调用
+5. `onBeforeUpdate()`：在组件更新前调用
+6. `onBeforeUnmount()`：在组件卸载前调用
+区别：相对于选项式`api`去除了`created()`相关的钩子，将`destroy()`选项改为了`onUnmount()`
+
+{% note info flat %}
+虽然表现形式不同，但选项式和组合式`api`对生命周期钩子的底层实现还是一样的，不必拘泥于这种差别
+{% endnote %}
 # 响应式api
 响应式`api`是`Vue3`中另一个重大变化，在选项式中，无论是`data`还是`props`，编译器都给你自动配好了响应式，但组合式`api`中需要自己设定响应式，一方面是`Vue3`对响应式做了优化，另一方面是组合式`api`有多种不同类型的响应式需要自己区分
 
@@ -590,6 +604,18 @@ watch([fooRef, barRef], ([foo, bar], [prevFoo, prevBar]) => {
 
 <!-- endtab -->
 {% endtabs %}
+
+## 响应式api工具函数
+通过`Vue`自带的工具函数，可以帮助我们鉴别某些响应式`api`
+>- `isRef()`：判断某个值是否为`ref`类型
+- `unref()`：如果某个值是`ref`,返回这个值的参数，否则返回这个值本身
+- `toRef()`：将一个值规范化为`ref`类型
+- `toValue()`：将一个对象规范化为它的参数值
+- `toRefs()`：将一个对象内部的值都转化为`ref`类型（对象值一般会是`reactive`类型，解构时会失去响应式，`ref`则会保留响应式）
+- `isProxy()`：检查一个对象是否是由 `reactive()`、`readonly()`、`shallowReactive()` 或 `shallowReadonly()` 创建的代理
+- `isReactive()`：检查一个对象是否是由 `reactive()` 或 `shallowReactive()` 创建的代理。
+- `isReadonly`：检查传入的值是否为只读对象。
+
 # 组件参数传递
 组合式`api`中区别于选项式的另一大区别是，在`setup()`配置项中，`props`、`emits`、`expose`等配置项是作为参数被放在`setup()`函数中的，然而在我们实际开发过程中，绝大多数情况下会使用`<script setup>`这个语法糖，那么函数参数的位置就不复存在了，所以我们就另外定义了一套标准(宏)来使用这些功能
 使用宏来定义这些选项还有其他一些好处，比如上下文实例参数传递变得更加直观，又比如可以很好地兼容`Typescript`进行类型推断
