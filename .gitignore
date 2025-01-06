@@ -7,5 +7,5 @@ public/
 .deploy*/
 .deploy_git*/
 .idea
-themes/butterfly/.git
+# themes/butterfly/.git
 _multiconfig.yml
