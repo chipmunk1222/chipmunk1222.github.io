@@ -26,7 +26,6 @@ description: Vue选项式api专栏分析
 {% tip sync %}
 配置项是选项式api的核心，通过将配置项注入组件实例，数据才能在组件中被顺利执行
 {% endtip %}
-
 ## el
 {% tabs el %}
 <!-- tab 详细描述@icon -->

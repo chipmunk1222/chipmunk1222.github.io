@@ -3,6 +3,7 @@ title: Vue知识点总结（四）路由实例
 date: 2024-10-22 16:41:31
 tags: Vue 学习笔记
 description: Vue-router路由介绍
+mathjax: true
 ---
 
 {% tip cogs %}

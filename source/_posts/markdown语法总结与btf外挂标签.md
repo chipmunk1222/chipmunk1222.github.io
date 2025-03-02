@@ -4,6 +4,7 @@ top_img: transparent
 date: 2024-10-31
 description: Markdown基本语法以及butterfly常用外挂标签介绍
 tags: Butterfly Markdown
+mathjax: true
 ---
 
 {% tip cogs %}本文主要记述Markdown的基本语法以及店长的butterfly外挂标签插件中常用部分的基本使用和演示，用于熟悉博客文章的撰写{% endtip %}
