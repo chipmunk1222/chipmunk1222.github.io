@@ -5,7 +5,7 @@ tags:
   - Vue 
   - 学习笔记
   - 状态管理
-description: Vue中状态管理库如pinia、Vuex的介绍
+description: Vue中状态管理库介紹，如pinia、Vuex
 mathjax: true
 ---
 
