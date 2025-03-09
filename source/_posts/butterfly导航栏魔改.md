@@ -1,7 +1,10 @@
 ---
 title: butterfly导航栏魔改
 date: 2024-10-22 16:41:31
-tags: Hexo 魔改记录
+tags: 
+  - Hexo 
+  - 魔改记录
+  - 导航栏
 description: 基于butterfly v5.0.0做的导航栏魔改
 # mathjax: true
 ---

@@ -297,7 +297,8 @@
       transform: translate(-50%, 60px);
     
     &.nav-visible #menus .menus_items 
-      transform: translate(-50%)
+      transform: translateX(-50%)
+      // top:50%
       transition: 0.3s
 
     #page-name::before {
@@ -349,6 +350,7 @@
       // font-family: "ZhuZiAYuanJWD";
     }
     #menus .menus_items {
+      position:absolute;
       transform: translate(-50%, -60px);
       transition: 0.3s;
     }

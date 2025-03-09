@@ -538,7 +538,7 @@ search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
   use: algolia_search
-  placeholder: '搜尋'
+  placeholder: '搜寻...'
 
   # Algolia Search
   algolia_search:
@@ -1117,7 +1117,7 @@ CDN:
   third_party_provider: jsdelivr
 
   # Add version number to url, true or false
-  version: true
+  version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
@@ -1127,7 +1127,7 @@ CDN:
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:
-    algolia_search: true
+    # algolia_search: true
     # aplayer_css:
     # aplayer_js:
     # artalk_css:
@@ -1156,7 +1156,7 @@ CDN:
     # katex:
     # katex_copytex:
     # lazyload:
-    local_search: true
+    # local_search: true
     # main:
     # main_css:
     # mathjax:

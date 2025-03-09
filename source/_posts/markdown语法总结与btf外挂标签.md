@@ -3,7 +3,10 @@ title: Markdown语法总结与butterfly外挂标签
 top_img: transparent
 date: 2024-10-31
 description: Markdown基本语法以及butterfly常用外挂标签介绍
-tags: Butterfly Markdown
+tags: 
+   - Butterfly 
+   - Markdown
+   - 外挂标签
 mathjax: true
 ---
 

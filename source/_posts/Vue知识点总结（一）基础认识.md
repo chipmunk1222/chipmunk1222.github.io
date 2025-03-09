@@ -1,7 +1,9 @@
 ---
 title: Vue知识点总结（一）基础认识
 date: 2024-11-19 10:07:53
-tags: Vue 学习笔记
+tags: 
+  - Vue 
+  - 学习笔记
 description: 对Vue基础概念以及基本指令的使用进行系统化总结
 mathjax: true
 ---

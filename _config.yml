@@ -157,10 +157,10 @@ server:
 # algolia搜索
 algolia:
   appId: "T54S9V87DB"
-  apiKey: "2e04db25a560fc0ab84fa74bb5672b73"
-  adminApiKey: "0da187c867521a06376211d74dcaeea9"
+  apiKey: "87ce764b96c86730c3b0a38a4f064726"
+  adminApiKey: "dc6f05f4537e9113d7d3b83abd63b00a"
   chunkSize: 5000
-  indexName: "my-hexo-blog"
+  indexName: "blog"
   fields:
     - content:strip:truncate,0,500
     - excerpt:strip

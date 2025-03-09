@@ -1,7 +1,10 @@
 ---
 title: 浅谈数据分析（二）echarts数据可视化
 date: 2024-11-19 10:08:34
-tags: 数据分析 echarts 可视化大屏
+tags: 
+  - 数据分析 
+  - echarts 
+  - 可视化大屏
 description: 详解echarts的使用以及可视化大屏制作技巧
 ---
 
