@@ -3953,11 +3953,11 @@ figure.highlight pre .javascript .function {
   transform: translate(-50%, 60px);
 }
 #page-header.fixed.nav-visible #menus .menus_items {
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -4032,6 +4032,7 @@ figure.highlight pre .javascript .function {
   transform: translateX(-50%);
 }
 #page-header.fixed #menus .menus_items {
+  position: absolute;
   -webkit-transform: translate(-50%, -60px);
   -moz-transform: translate(-50%, -60px);
   -o-transform: translate(-50%, -60px);
