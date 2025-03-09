@@ -1394,7 +1394,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: hanchanbanyuanti,jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif;
+  font-family: hanchanbanyuanti, jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   scroll-behavior: smooth;
@@ -1523,7 +1523,7 @@ a:hover {
 .site-name,
 #aside-content .author-info-name,
 #aside-content .author-info-description {
-  font-family: hanchanbanyuanti,jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif;
+  font-family: hanchanbanyuanti, jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif;
 }
 .is-center {
   text-align: center;
@@ -2051,7 +2051,7 @@ figure.highlight pre .javascript .function {
   height: 100%;
   vertical-align: top;
   text-align: center;
-  font-family: hanchanbanyuanti,jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif;
+  font-family: hanchanbanyuanti, jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif;
 }
 @media screen and (max-width: 768px) {
   .type-404 .error-content .error-info {
@@ -3665,7 +3665,6 @@ figure.highlight pre .javascript .function {
   display: none;
 }
 #page-header.not-top-img #nav {
-  background: rgba(255,255,255,0.4);
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
 }
