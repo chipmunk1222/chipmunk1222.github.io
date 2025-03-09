@@ -879,14 +879,14 @@ font:
   global_font_size: 15px
   code_font_size:
   # font_family: Arial, Roboto, square-black, starry sky,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial, sans-serif
-  font_family: hanchanbanyuanti,jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
+  font_family: hanchanbanyuanti, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
   code_font_family:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
   # font_family: Arial, Merriweather, square-black,starry sky,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial, sans-serif
-  font_family: hanchanbanyuanti,jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
+  font_family: hanchanbanyuanti, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
 
 # The setting of divider icon
 hr_icon:
