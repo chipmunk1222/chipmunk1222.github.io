@@ -100,7 +100,7 @@ footer_img: transparent
 
 # Website Background
 # Can set it to color or image url
-background: /img/bg5.jpg
+background: https://res.cloudinary.com/dobligy9s/image/upload/v1740211489/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_10_zw3vlq.png
 # background: none
 # background: 'linear-gradient(to right top, #fdd5ff, #ffd6e7, #ffdfcf, #ffefc4, #f8ffcc)''
 
@@ -114,13 +114,18 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover: 
-    - /img/card/card1.png
-    - /img/card/card2.png
-    - /img/card/card3.png 
-    - /img/card/card4.png
-    - /img/card/card5.jpg
-    - /img/card/card6.png
-    - /img/card/card7.jpg
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211502/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_13_jcfzta.png
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211502/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_11_ssezw0.png
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211501/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_12_hnxlvk.png
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211496/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_15_ig6fsq.png
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211489/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_10_zw3vlq.png
+    # - /img/card/card1.png
+    # - /img/card/card2.png
+    # - /img/card/card3.png 
+    # - /img/card/card4.png
+    # - /img/card/card5.jpg
+    # - /img/card/card6.png
+    # - /img/card/card7.jpg
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images
@@ -538,7 +543,7 @@ search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
   use: algolia_search
-  placeholder: '搜寻...'
+  placeholder: '在此输入搜索内容...'
 
   # Algolia Search
   algolia_search:
@@ -879,14 +884,14 @@ font:
   global_font_size: 15px
   code_font_size:
   # font_family: Arial, Roboto, square-black, starry sky,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial, sans-serif
-  font_family: hanchanbanyuanti, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
+  font_family: hanchanbanyuanti, jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
   code_font_family:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
   # font_family: Arial, Merriweather, square-black,starry sky,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial, sans-serif
-  font_family: hanchanbanyuanti, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
+  font_family: hanchanbanyuanti, jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif
 
 # The setting of divider icon
 hr_icon:

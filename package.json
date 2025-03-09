@@ -12,7 +12,6 @@
     "version": "7.3.0"
   },
   "dependencies": {
-    "algoliasearch": "^5.20.4",
     "hexo": "^7.3.0",
     "hexo-algoliasearch": "^2.0.1",
     "hexo-browsersync": "^0.3.0",

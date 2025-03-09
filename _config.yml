@@ -185,6 +185,3 @@ kramed:
   breaks: true
   smartLists: true
   smartypants: true
-
-plugins:
-  - hexo-algoliasearch
