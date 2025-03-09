@@ -61,7 +61,8 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+# favicon: /img/favicon.png
+favicon: https://res.cloudinary.com/dobligy9s/image/upload/v1741523046/icon_enxtjc.png
 
 avatar:
   img: /img/avatar.jpg
