@@ -101,7 +101,7 @@ footer_img: transparent
 
 # Website Background
 # Can set it to color or image url
-background: https://res.cloudinary.com/dobligy9s/image/upload/v1740211489/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_10_zw3vlq.png
+background: https://res.cloudinary.com/dobligy9s/image/upload/v1741684067/bg1_jxccih.jpg
 # background: https://res.cloudinary.com/dobligy9s/image/upload/v1741589681/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_14_mi1jbe.png
 # background: '#f7f9fe'
 # background: 'linear-gradient(to right top, #fdd5ff, #ffd6e7, #ffdfcf, #ffefc4, #f8ffcc)'
@@ -116,13 +116,12 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover: 
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211502/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_13_jcfzta.png
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211502/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_11_ssezw0.png
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211501/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_12_hnxlvk.png
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211496/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_15_ig6fsq.png
-    # - https://res.cloudinary.com/dobligy9s/image/upload/v1740211489/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_10_zw3vlq.png
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741589591/Snipaste_2025-03-09_22-56-57_kf5ehs.png
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741589589/Snipaste_2025-03-09_22-55-10_zyvy5v.png
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684037/cover1_cbk9l0.jpg
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684037/cover3_wkqvfp.jpg
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684037/cover2_s76qcg.jpg
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684038/cover4_vzfigd.jpg
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684038/cover6_wsqo3g.jpg
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684038/cover5_wgcqpy.jpg
 
     # - /img/card/card1.png
     # - /img/card/card2.png
@@ -511,7 +510,7 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
+  site_uv: false
   site_pv: false
   page_pv: false
 
@@ -1052,7 +1051,7 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: false
+instantpage: true
 
 # Pangu - Insert a space between Chinese character and English character
 # https://github.com/vinta/pangu.js
