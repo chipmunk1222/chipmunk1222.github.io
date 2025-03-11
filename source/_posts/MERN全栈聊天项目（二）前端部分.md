@@ -13,6 +13,7 @@ tags:
   - zustand
 description: 来源于油管的全栈聊天项目，应用了如今全栈开发中的MERN架构，即，mongodb+express+react+nodejs
 mathjax: true
+swiper_index: 2
 ---
 
 # 项目创建

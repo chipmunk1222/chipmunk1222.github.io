@@ -6,6 +6,7 @@ tags:
   - echarts 
   - 可视化大屏
 description: 详解echarts的使用以及可视化大屏制作技巧
+swiper_index: 3
 ---
 
 {% tip cogs %}

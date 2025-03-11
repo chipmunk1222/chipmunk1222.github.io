@@ -65,7 +65,7 @@ social:
 favicon: https://res.cloudinary.com/dobligy9s/image/upload/v1741523046/icon_enxtjc.png
 
 avatar:
-  img: /img/avatar.jpg
+  img: https://res.cloudinary.com/dobligy9s/image/upload/v1741589610/avatar.v1_rfipna.png
   effect: false
 
 # Disable all banner images
@@ -102,8 +102,9 @@ footer_img: transparent
 # Website Background
 # Can set it to color or image url
 background: https://res.cloudinary.com/dobligy9s/image/upload/v1740211489/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_10_zw3vlq.png
-# background: none
-# background: 'linear-gradient(to right top, #fdd5ff, #ffd6e7, #ffdfcf, #ffefc4, #f8ffcc)''
+# background: https://res.cloudinary.com/dobligy9s/image/upload/v1741589681/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_14_mi1jbe.png
+# background: '#f7f9fe'
+# background: 'linear-gradient(to right top, #fdd5ff, #ffd6e7, #ffdfcf, #ffefc4, #f8ffcc)'
 
 cover:
   # Disable the cover or not
@@ -119,7 +120,10 @@ cover:
     - https://res.cloudinary.com/dobligy9s/image/upload/v1740211502/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_11_ssezw0.png
     - https://res.cloudinary.com/dobligy9s/image/upload/v1740211501/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_12_hnxlvk.png
     - https://res.cloudinary.com/dobligy9s/image/upload/v1740211496/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_15_ig6fsq.png
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1740211489/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_10_zw3vlq.png
+    # - https://res.cloudinary.com/dobligy9s/image/upload/v1740211489/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_10_zw3vlq.png
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741589591/Snipaste_2025-03-09_22-56-57_kf5ehs.png
+    - https://res.cloudinary.com/dobligy9s/image/upload/v1741589589/Snipaste_2025-03-09_22-55-10_zyvy5v.png
+
     # - /img/card/card1.png
     # - /img/card/card2.png
     # - /img/card/card3.png 
@@ -226,7 +230,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -507,9 +511,9 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: false
-  site_pv: true
-  page_pv: true
+  site_uv: true
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -1026,7 +1030,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
@@ -1048,7 +1052,7 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: false
+instantpage: true
 
 # Pangu - Insert a space between Chinese character and English character
 # https://github.com/vinta/pangu.js
@@ -1191,8 +1195,8 @@ CDN:
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
 swiper:
-  enable: false # 开关
-  priority: 5 #过滤器优先权
+  enable: true # 开关
+  priority: 2 #过滤器优先权
   enable_page: all # 应用页面
   timemode: date #date/updated
   layout: # 挂载容器类型
@@ -1239,3 +1243,30 @@ tag_plugins:
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: false # 开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: odd # odd：3列 | even：4列
+  row: 2 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+    - descr: 前端技术
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+    - descr: 玩转Win10
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+    - descr: 长篇小说连载
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
+    - descr: 个人日记
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp
+    - descr: 诗词歌赋
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp
+    - descr: 杂谈教程
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css

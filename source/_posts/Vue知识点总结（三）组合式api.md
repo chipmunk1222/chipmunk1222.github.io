@@ -7,6 +7,7 @@ tags:
   - 组合式api
 description: Vue选项式api专栏分析
 mathjax: true
+swiper_index: 1
 ---
 
 

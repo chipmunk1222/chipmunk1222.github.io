@@ -8,6 +8,7 @@ tags:
    - Markdown
    - 外挂标签
 mathjax: true
+swiper_index: 5
 ---
 
 {% tip cogs %}本文主要记述Markdown的基本语法以及店长的butterfly外挂标签插件中常用部分的基本使用和演示，用于熟悉博客文章的撰写{% endtip %}
