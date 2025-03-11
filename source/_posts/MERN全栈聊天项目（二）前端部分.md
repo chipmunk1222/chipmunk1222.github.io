@@ -12,7 +12,7 @@ tags:
   - router
   - zustand
 category: 项目总结
-description: 来源于油管的全栈聊天项目，应用了如今全栈开发中的MERN架构，即，mongodb+express+react+nodejs
+description: 来源于油管的全栈聊天项目，应用了如今全栈开发中的MERN架构，即，mongodb+express+react+nodejs，前端架构介绍
 mathjax: true
 swiper_index: 2
 ---

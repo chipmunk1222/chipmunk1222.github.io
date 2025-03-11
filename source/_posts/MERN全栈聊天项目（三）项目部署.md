@@ -1,10 +1,17 @@
 ---
 title: MERN全栈聊天项目（三）项目部署
-date: 2025-03-11 09:13:43
+date: 2025-03-01 09:13:43
 tags:
+  - node
+  - 全栈
+  - express
+  - react
+  - mongoDB
   - replit
   - UptimeRobot
+  - 项目部署
 category: 项目总结
+description: 来源于油管的全栈聊天项目，应用了如今全栈开发中非常流行了MERN架构，对于使用replit进行项目部署的教程
 ---
 
 # 安装配置文件

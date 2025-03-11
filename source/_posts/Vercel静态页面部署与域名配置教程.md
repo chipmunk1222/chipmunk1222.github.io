@@ -1,6 +1,6 @@
 ---
 title: Vercel静态页面部署与域名配置教程
-date: 2025-03-9 12:28:56
+date: 2025-03-09 12:28:56
 tags:
   - Vercel
   - Domain
@@ -9,7 +9,7 @@ tags:
   - Blog
   - 教程
 category: 技术教程
-descriptions: 使用Vercel对hexo博客进行静态资源部署，并绑定阿里云的域名
+description: 使用vercel对hexo博客进行静态资源无服务器部署，并绑定阿里云的域名
 ---
 
 {% tip cogs %}
