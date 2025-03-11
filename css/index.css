@@ -2822,7 +2822,7 @@ figure.highlight pre .javascript .function {
   #aside-content .sticky_layout {
     position: sticky;
     position: -webkit-sticky;
-    top: 20px;
+    top: 72px;
     -webkit-transition: top 0.3s;
     -moz-transition: top 0.3s;
     -o-transition: top 0.3s;
