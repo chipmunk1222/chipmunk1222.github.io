@@ -1,12 +1,14 @@
 ---
 title: Vue知识点总结（五）状态管理
-date: 2024-10-22 16:41:31
+date: 2024-10-27 16:41:31
 tags: 
   - Vue 
   - 学习笔记
   - 状态管理
+  - 前端
 description: Vue中状态管理库介紹，如pinia、Vuex
 mathjax: true
+category: 前端技术
 ---
 
 {% tip cogs %}

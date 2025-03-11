@@ -1,10 +1,11 @@
 ---
 title: Vue知识点总结（三）组合式api
-date: 2024-10-22 16:41:31
+date: 2024-10-24 16:41:31
 tags: 
   - Vue 
   - 学习笔记
   - 组合式api
+category: 前端技术
 description: Vue选项式api专栏分析
 mathjax: true
 swiper_index: 1

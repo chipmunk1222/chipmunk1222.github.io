@@ -1,12 +1,13 @@
 ---
 title: algolia搜索功能配置
-date: 2025-02-21 12:28:56
+date: 2025-02-19 12:28:56
 tags:
   - search
   - algolia
   - 博客
-  - blog
-  - hexo
+  - Blog
+  - Hexo
+category: 博客相关
 descriptions: 为博客配置在线搜索功能，algolia_search的配置方法
 ---
 

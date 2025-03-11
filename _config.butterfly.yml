@@ -1030,7 +1030,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
@@ -1052,7 +1052,7 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: true
+instantpage: false
 
 # Pangu - Insert a space between Chinese character and English character
 # https://github.com/vinta/pangu.js
@@ -1196,7 +1196,7 @@ CDN:
 # see https://akilar.top/posts/8e1264d1/
 swiper:
   enable: true # 开关
-  priority: 2 #过滤器优先权
+  priority: 5 #过滤器优先权
   enable_page: all # 应用页面
   timemode: date #date/updated
   layout: # 挂载容器类型

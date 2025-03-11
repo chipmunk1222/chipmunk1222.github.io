@@ -1,6 +1,6 @@
 ---
 title: MERN全栈聊天项目（一）后端部分
-date: 2025-01-11 12:28:56
+date: 2025-02-12 12:28:56
 tags: 
   - node
   - 全栈
@@ -10,10 +10,12 @@ tags:
   - socket.io
   - cors
 description: 来源于油管的全栈聊天项目，应用了如今全栈开发中非常流行了MERN架构，即，mongodb+express+react+nodejs
+category: 项目总结
 ---
 
+
 # 依赖引入
-引入`node`后端需要的依赖
+引入`node`后端所需要的依赖
 ```node
 cd backend
 

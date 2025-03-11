@@ -1,11 +1,12 @@
 ---
 title: 浅谈数据分析（一）基于Python爬虫的数据分析
-date: 2024-10-22 16:41:31
+date: 2024-12-31 17:12:34
 tags:
   - Python 
   - 数据分析 
-	- 爬虫
+  - 爬虫
 description: 从宏观视角系统性地介绍数据分析的步骤
+category: 项目总结
 ---
 
 {% tip cogs %}

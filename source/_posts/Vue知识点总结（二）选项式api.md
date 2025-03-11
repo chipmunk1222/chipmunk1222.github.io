@@ -3,9 +3,11 @@ title: Vue知识点总结（二）选项式api
 date: 2024-10-22 16:41:31
 tags: 
   - Vue 
-  - 学习笔记
+  - 前端
   - 选项式api
+  - 学习笔记
 description: Vue选项式api专栏分析
+category: 前端技术
 ---
 
 {% tip cogs %}

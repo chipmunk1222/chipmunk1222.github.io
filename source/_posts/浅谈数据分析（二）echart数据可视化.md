@@ -1,12 +1,13 @@
 ---
 title: 浅谈数据分析（二）echarts数据可视化
-date: 2024-11-19 10:08:34
+date: 2025-1-3 10:08:34
 tags: 
   - 数据分析 
-  - echarts 
+  - Echarts 
   - 可视化大屏
 description: 详解echarts的使用以及可视化大屏制作技巧
 swiper_index: 3
+category: 项目总结
 ---
 
 {% tip cogs %}

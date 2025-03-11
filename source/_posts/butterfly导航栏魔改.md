@@ -1,19 +1,16 @@
 ---
 title: butterfly导航栏魔改
-date: 2024-10-22 16:41:31
+date: 2024-10-12 18:21:31
 tags: 
-  - Hexo 
   - 博客
-  - blog
+  - Blog
   - 魔改记录
   - 导航栏
+  - Butterfly
 description: 基于butterfly v5.0.0做的导航栏魔改
+category: 博客相关
 # mathjax: true
 ---
-
-{% tip cogs %}
-导航栏样式主要参考Fomalhaut的博客，魔改教程主要参考安知鱼的文章
-{% endtip %}
 
 {% note warning flat %}
 本篇文章记述`butterfly`导航栏的魔改过程,基于`butterfly v5.0.0`,主要解决了由于`butterfly`升级造成的新的兼容性问题~~新版本升级后不仅动了很多地方的代码，甚至连文件结构都有变化~~,改着改着发现很多地方代码结构都变了，所以很多地方直接动了核心逻辑~~造屎山~~，所以文中有大量修改主题文件的代码，参考需谨慎。

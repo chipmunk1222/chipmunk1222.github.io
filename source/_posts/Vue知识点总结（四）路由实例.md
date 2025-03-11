@@ -1,11 +1,12 @@
 ---
 title: Vue知识点总结（四）路由实例
-date: 2024-10-22 16:41:31
+date: 2024-10-26 16:41:31
 tags: 
   - Vue 
   - 学习笔记
-  - router
-description: Vue-router路由介绍
+  - 前端
+description: Vue-router路由创建与使用介绍
+category: 前端技术
 mathjax: true
 ---
 
