@@ -44,7 +44,6 @@ description: 使用vercel对hexo博客进行静态资源无服务器部署，并
 等待一段时间过后，项目就部署完毕了，此时`Vercel`会自动给你分配一个域名，只不过这个域名不是我们常识里的样子，而且国内可能会被墙，所以我们要将其绑定到“正常”的域名中
 
 部署完后应该会弹出一个`DashBoard`，点击进入，或点击头像，选择`DashBoard`
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741525329/Snipaste_2025-03-09_21-00-13_ief2py.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741525329/Snipaste_2025-03-09_21-00-13_ief2py.png)
 
 进入后就是项目的工作台了，当状态栏显示`ready`就表示项目已经部署成功，点击右上角的`Domain`进入域名绑定页面
 ![https://res.cloudinary.com/dobligy9s/image/upload/v1741525330/Snipaste_2025-03-09_21-01-08_oo24oz.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741525330/Snipaste_2025-03-09_21-01-08_oo24oz.png)
