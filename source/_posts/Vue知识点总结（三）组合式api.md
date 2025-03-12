@@ -6,7 +6,7 @@ tags:
   - 学习笔记
   - 组合式api
 category: 前端技术
-description: Vue选项式api专栏分析
+description: Vue组合式api专栏分析，性能提升介绍
 mathjax: true
 swiper_index: 1
 ---

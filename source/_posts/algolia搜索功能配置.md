@@ -12,7 +12,7 @@ descriptions: 为博客配置在线搜索功能，algolia_search的配置方法
 ---
 
 {% tip cogs %}
-关于配置博客搜索功能时菜的坑的总结，介绍下algolia搜索功能的完整配置流程
+在Hexo博客中引入搜索功能，使用algolia优化浏览器SEO，介绍下algolia搜索功能的完整配置流程
 {% endtip %}
 
 # 本地引入algolia
