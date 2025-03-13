@@ -20,9 +20,15 @@ nav#nav
         span.site-page.social-icon.search
           i.fas.fa-search.fa-fw
           span= ' ' + _p('search.title')
+
+    //- //- 美化设置
+    //- a.meihua.faa-parent.animated-hover(onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button")
+    //-   svg.faa-tada.icon(style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="false")
+    //-     use(xlink:href='#icon-zhuifan')  
+
     if theme.menu
       != partial('includes/header/menu_item', {}, {cache: true})
-
+ 
       #toggle-menu
         span.site-page
           i.fas.fa-bars.fa-fw
