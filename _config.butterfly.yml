@@ -853,7 +853,7 @@ text_align_justify: false
 # Add a mask to the header and footer
 mask:
   header: true
-  footer: true
+  footer: false
 
 # Loading Animation
 preloader:
@@ -1029,14 +1029,14 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar - Toast Notification
@@ -1106,6 +1106,9 @@ inject:
     - <link rel="stylesheet" href="/css/progress_bar.css"  media="defer" onload="this.media='all'">  # 加载条样式
     - <link rel="stylesheet" href="/css/page_wave.css"  media="defer" onload="this.media='all'">  # 文章页波浪
 
+    - <link rel="stylesheet" href="/css/music.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/anzhiyv.css"  media="defer" onload="this.media='all'">
+
     # - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4732727_6plr38b09gk.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">   # 动态字体
     # - <link rel="stylesheet" href="/xxx.css">
@@ -1114,7 +1117,21 @@ inject:
     # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script src="/js/badage.js"  defer></script>   # 顶部进度条
     - <script src="/js/nav.js" defer></script>       # 导航栏
-    - <script src="/js/prettier.js" defer></script>   # 代码美化
+    # - <script src="/js/prettier.js" defer></script>   # 代码美化
+
+    # 51la统计&灵雀统计
+    - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+    - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+    - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>
+    - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
+
+    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+
+    # 自定义js
+    - <script async data-pjax src="/js/anzhiyu.js"></script>
+    - <script async data-pjax src="/js/anzhiyufunction.js"></script>
+    - <script async src="/js/anzhiyuOnlyOne.js"></script>
+
     # - <script src="xxxx"></script>
 
 # CDN Settings
@@ -1139,8 +1156,8 @@ CDN:
     # activate_power_mode:
     # algolia_js:
     # algolia_search: true
-    # aplayer_css:
-    # aplayer_js:
+    aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -1173,7 +1190,7 @@ CDN:
     # mathjax:
     # medium_zoom:
     # mermaid:
-    # meting_js:
+    meting_js: https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js
     # pangu:
     # prismjs_autoloader:
     # prismjs_js:
@@ -1190,6 +1207,7 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+    countup_js: /js/countup.js
 
 
 

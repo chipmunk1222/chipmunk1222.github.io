@@ -18,4 +18,14 @@
 //   result <= 99 || (result = 99), (btn.innerHTML = result);
 // }
 
-document.getElementById("page-name").innerText = document.title.split(" | chipmunk")[0] === "chipmunk" ? "chipmunk - 人间烟火气 最抚凡人心" : document.title.split(" | chipmunk")[0];
+// document.getElementById("page-name").innerText = document.title.split(" | chipmunk")[0] === "chipmunk" ? "chipmunk - 人间烟火气 最抚凡人心" : document.title.split(" | chipmunk")[0];
+
+document.addEventListener('pjax:complete', function() {
+    document.getElementById("page-name").innerText = document.title.split(" | chipmunk")[0] === "chipmunk" ? "chipmunk - 人间烟火气 最抚凡人心" : document.title.split(" | chipmunk")[0];
+});
+
+// 初始化页面时也需要执行一次
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("page-name").innerText = document.title.split(" | chipmunk")[0] === "chipmunk" ? "chipmunk - 人间烟火气 最抚凡人心" : document.title.split(" | chipmunk")[0];
+});
+

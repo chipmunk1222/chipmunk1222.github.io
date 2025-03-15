@@ -59,7 +59,8 @@ function setFont(n) {
 	} else {
 		document.documentElement.style.setProperty("--global-font", n);
 		document.body.style.fontFamily =
-			"var(--global-font),-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif";
+			// "var(--global-font),-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif";
+			"hanchanbanyuanti, jiyinghuipianheyuan, Arial, Microsoft Yahei, SimSun, Noto Sans CJK, sans-serif"
 	}
 	try {
 		setFontBorder();

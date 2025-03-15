@@ -10,8 +10,8 @@ block content
       !=partial('includes/third-party/comments/index', {}, {cache: true})
 
   #page(class=noCardLayout)
-    if top_img === false && page.title
-      .page-title= page.title
+    if top_img === false && page.type!='music' && page.title 
+      h1.page-title= page.title
 
     case page.type
       when 'tags'
@@ -27,6 +27,10 @@ block content
         include includes/page/404.pug
       when 'shuoshuo'
         include includes/page/shuoshuo.pug
+      when 'about'
+        include includes/page/about.pug
+      when 'music'
+        include includes/page/music.pug
       default
         include includes/page/default-page.pug
         +commentLoad
