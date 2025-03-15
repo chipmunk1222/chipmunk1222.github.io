@@ -1132,6 +1132,11 @@ inject:
     - <script async data-pjax src="/js/anzhiyufunction.js"></script>
     - <script async src="/js/anzhiyuOnlyOne.js"></script>
 
+
+    - <canvas id="snow"></canvas> # 雪花画布
+    - <script async src="/js/snow.js"></script> # 雪花特效
+    - <canvas id="universe"></canvas> # 星空画布
+    - <script defer src="/js/universe.js"></script> # 星空特效
     # - <script src="xxxx"></script>
 
 # CDN Settings
