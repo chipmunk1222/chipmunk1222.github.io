@@ -141,7 +141,7 @@ error_img:
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: /img/error-page.png
+  background: https://res.cloudinary.com/dobligy9s/image/upload/v1742094873/404_t2asp0.gif
 
 post_meta:
   page: # Home Page
@@ -1112,8 +1112,6 @@ inject:
     # - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4732727_6plr38b09gk.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">   # 动态字体
 
-    # - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
-    # - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/404/404.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script async src="//at.alicdn.com/t/c/font_4732727_1m21a74zx4o.js"></script>   # 阿里图标库
