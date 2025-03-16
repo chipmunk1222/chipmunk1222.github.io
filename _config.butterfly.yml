@@ -1111,6 +1111,9 @@ inject:
 
     # - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4732727_6plr38b09gk.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">   # 动态字体
+
+    # - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
+    # - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/404/404.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script async src="//at.alicdn.com/t/c/font_4732727_1m21a74zx4o.js"></script>   # 阿里图标库
@@ -1221,7 +1224,7 @@ CDN:
 swiper:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
+  enable_page: / # 应用页面
   timemode: date #date/updated
   layout: # 挂载容器类型
     type: id
