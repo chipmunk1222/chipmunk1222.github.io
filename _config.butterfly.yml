@@ -1116,7 +1116,7 @@ inject:
   bottom:
     - <script async src="//at.alicdn.com/t/c/font_4732727_1m21a74zx4o.js"></script>   # 阿里图标库
     # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
-    - <script src="/js/badage.js"></script>   # 顶部进度条
+    - <script src="/js/badage.js" defer></script>   # 顶部进度条
     - <script src="/js/nav.js" defer></script>       # 导航栏
     # - <script src="/js/prettier.js" defer></script>   # 代码美化
 
