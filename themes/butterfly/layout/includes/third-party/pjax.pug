@@ -58,8 +58,6 @@ script.
     document.addEventListener('pjax:error', e => {
       if (e.request.status === 404) {
         window.location.href = '!{url_for("/404.html")}'
-
-
       }
     })
   })()
