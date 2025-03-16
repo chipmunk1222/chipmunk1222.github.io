@@ -59,7 +59,7 @@ script.
       if (e.request.status === 404) {
         const usePjax = !{theme.pjax && theme.pjax.enable}
         !{theme.error_404 && theme.error_404.enable} 
-          ? (usePjax ? pjax.loadUrl('!{url_for("/404.html")}') : window.location.href = e.request.responseURL
+          ? (usePjax ? pjax.loadUrl('!{url_for("/404.html")}') : window.location.href = e.request.responseURL)
           : window.location.href = e.request.responseURL
       }
     })
