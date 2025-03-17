@@ -15,6 +15,11 @@ nav#nav
       a(id="page-name" href="javascript:btf.scrollToDest(0, 500)") PAGE_NAME
 
   #menus
+    #top-darkmode
+      span.site-page(type="button" title=_p('rightside.night_mode_title'))
+        //- svg(width='25', height='25', viewBox='0 0 1024 1024')
+        //-   use#modeicon(xlink:href='#icon-moon')
+        i.fas.fa-adjust.fa-fw
     #change-bg
       span.site-page(type="button" title='切换背景' onclick="toggleWinbox()")
         i.fas.fa-image.fa-fw

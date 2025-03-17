@@ -663,6 +663,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+  document.getElementById('top-darkmode').addEventListener('click', e => {
+    e.stopPropagation()
+    rightSideFn['darkmode']()
+  })
+
   /**
    * menu
    * 側邊欄sub-menu 展開/收縮
