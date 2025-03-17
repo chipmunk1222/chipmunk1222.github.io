@@ -1106,9 +1106,11 @@ inject:
     - <link rel="stylesheet" href="/css/progress_bar.css"  media="defer" onload="this.media='all'">  # 加载条样式
     - <link rel="stylesheet" href="/css/page_wave.css"  media="defer" onload="this.media='all'">  # 文章页波浪
 
-    - <link rel="stylesheet" href="/css/music.css"  media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/anzhiyv.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/music.css"  media="defer" onload="this.media='all'">  # 音乐
+    - <link rel="stylesheet" href="/css/anzhiyv.css"  media="defer" onload="this.media='all'">  # 安知鱼主题参数
 
+    - <link rel="stylesheet" href="/css/popup.css"  media="defer" onload="this.media='all'"> # 弹窗
+ 
     # - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4732727_6plr38b09gk.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">   # 动态字体
 
@@ -1118,6 +1120,8 @@ inject:
     # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script src="/js/badage.js" defer></script>   # 顶部进度条
     - <script src="/js/nav.js" defer></script>       # 导航栏
+    - <script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox
+    - <script src="/js/popup.js" defer></script>   # 背景弹窗
     # - <script src="/js/prettier.js" defer></script>   # 代码美化
 
     # 51la统计&灵雀统计

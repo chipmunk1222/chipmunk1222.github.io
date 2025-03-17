@@ -15,6 +15,9 @@ nav#nav
       a(id="page-name" href="javascript:btf.scrollToDest(0, 500)") PAGE_NAME
 
   #menus
+    #change-bg
+      span.site-page(type="button" title='切换背景' onclick="toggleWinbox()")
+        i.fas.fa-image.fa-fw
     if theme.search.use
       #search-button
         span.site-page.social-icon.search
