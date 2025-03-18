@@ -1130,6 +1130,9 @@ inject:
 
     - <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
     - <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+
+    - <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script> # 引入Jquery
+    - <script type="text/javascript" src="/js/rightmenu.js"></script> # 右键菜单 
     
     # 51la统计&灵雀统计
     - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>

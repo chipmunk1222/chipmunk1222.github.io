@@ -38,4 +38,5 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
 
     include ./music.pug
     include ./rightside.pug
+    !=partial('includes/rightmenu',{}, {cache:true})
     include ./additional-js.pug

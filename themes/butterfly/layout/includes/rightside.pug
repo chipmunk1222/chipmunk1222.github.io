@@ -32,10 +32,13 @@ mixin rightsideItem(array)
       when 'bg'
         button#change_bg(type="button" title='切换背景' onclick="toggleWinbox()")
           i.fas.fa-images
+      when 'mouse'
+        button.share(type="button" title='右键模式' onclick="changeMouseMode()")
+          i.fas.fa-mouse
 
 #rightside
   - const { enable, hide, show } = theme.rightside_item_order
-  - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside','bg']
+  - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside','bg','mouse']
   - const showArray = enable ? show && show.split(',') : ['toc','chat','comment']
 
   
