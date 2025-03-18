@@ -15,13 +15,17 @@ nav#nav
       a(id="page-name" href="javascript:btf.scrollToDest(0, 500)") PAGE_NAME
 
   #menus
+    #randomPost
+      span.site-page.social-icon.search(href="javascript:void(0);" onclick="toRandomPost()" title="随机访问一篇文章")
+        i.fas.fa-shuffle.fa-fw
+
     #top-darkmode
-      span.site-page(type="button" title=_p('rightside.night_mode_title'))
+      span.site-page.social-icon.search(title=_p('rightside.night_mode_title'))
         //- svg(width='25', height='25', viewBox='0 0 1024 1024')
         //-   use#modeicon(xlink:href='#icon-moon')
         i.fas.fa-adjust.fa-fw
     #change-bg
-      span.site-page(type="button" title='切换背景' onclick="toggleWinbox()")
+      span.site-page.social-icon.search(title='切换背景' onclick="toggleWinbox()")
         i.fas.fa-image.fa-fw
     if theme.search.use
       #search-button

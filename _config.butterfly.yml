@@ -22,7 +22,7 @@ menu:
     归档: /archives/ || icon-bookshelf || faa-tada
     标签: /tags/ || icon-tag || faa-tada
     分类: /categories/ || icon-category || faa-tada
-    随便逛逛: /random/ || icon-random || faa-tada
+    随便逛逛: javascript:toRandomPost() || icon-random || faa-tada
   休闲||icon-coffee || faa-tada || hide:
     音乐馆: /music/ || icon-music || faa-tada
     追番: /movies/ || icon-zhuifan || faa-tada
@@ -78,7 +78,7 @@ default_top_img: false
 index_img: false
 
 # The banner image of archive page
-archive_img: transparent
+archive_img: false
 
 # Note: tag page, not tags page
 tag_img: transparent
@@ -1118,7 +1118,7 @@ inject:
 
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script async src="/js/debounce.js"></script>
+    - <script async src="/js/debounce.js"></script> # 防抖
     - <script async src="//at.alicdn.com/t/c/font_4732727_1m21a74zx4o.js"></script>   # 阿里图标库
     # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script src="/js/title.js" defer></script> # 恶搞标题  
@@ -1126,6 +1126,7 @@ inject:
     - <script src="/js/nav.js" defer></script>       # 导航栏
     - <script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox
     - <script src="/js/popup.js" defer></script>   # 背景弹窗
+    - <script src="/js/random.js" defer></script>    # 随机访问功能 
     # - <script src="/js/prettier.js" defer></script>   # 代码美化
 
     - <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
