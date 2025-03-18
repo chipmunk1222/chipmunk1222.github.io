@@ -1101,10 +1101,12 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+  
     - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">    # 全局样式
     - <link rel="stylesheet" href="/css/nav_menu.css"  media="defer" onload="this.media='all'">  # 导航栏样式
     - <link rel="stylesheet" href="/css/progress_bar.css"  media="defer" onload="this.media='all'">  # 加载条样式
     - <link rel="stylesheet" href="/css/page_wave.css"  media="defer" onload="this.media='all'">  # 文章页波浪
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/theme-chalk/index.css"> # 引入组件库(f12)
 
     - <link rel="stylesheet" href="/css/music.css"  media="defer" onload="this.media='all'">  # 音乐
     - <link rel="stylesheet" href="/css/anzhiyv.css"  media="defer" onload="this.media='all'">  # 安知鱼主题参数
@@ -1116,6 +1118,7 @@ inject:
 
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+    - <script async src="/js/debounce.js"></script>
     - <script async src="//at.alicdn.com/t/c/font_4732727_1m21a74zx4o.js"></script>   # 阿里图标库
     # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script src="/js/title.js" defer></script> # 恶搞标题  
@@ -1125,6 +1128,9 @@ inject:
     - <script src="/js/popup.js" defer></script>   # 背景弹窗
     # - <script src="/js/prettier.js" defer></script>   # 代码美化
 
+    - <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+    - <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+    
     # 51la统计&灵雀统计
     - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
