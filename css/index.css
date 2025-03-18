@@ -1350,8 +1350,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 15px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a4d8fa;
-  --hr-before-color: #80c8f8;
+  --hr-border: #d2ebfd;
+  --hr-before-color: #bfe4fb;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-a-color: #4c4948;
@@ -4623,6 +4623,10 @@ figure.highlight pre .javascript .function {
 #nav.hide-menu #search-button span:not(.site-page) {
   display: none;
 }
+#nav #randomPost {
+  display: inline;
+  padding: 0 0 0 14px;
+}
 #nav #top-darkmode {
   display: inline;
   padding: 0 0 0 14px;
@@ -4857,7 +4861,7 @@ figure.highlight pre .javascript .function {
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -7370,7 +7374,7 @@ blockquote.pullquote.right {
   margin-left: -16px;
 }
 #about-page .author-box .author-tag{
-  transform: translate(0,-4px);
+  transform: translate(0,4px);
   padding: 1px 8px;
   background: var(--anzhiyu-card-bg);
   border: var(--style-border-always);
