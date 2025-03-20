@@ -757,10 +757,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	document.getElementById("top-darkmode").addEventListener("click", (e) => {
-		e.stopPropagation();
-		rightSideFn["darkmode"]();
-	});
+	// document.getElementById("top-darkmode").addEventListener("click", (e) => {
+	// 	e.stopPropagation();
+	// 	rightSideFn["darkmode"]();
+	// });
 
 	/**
 	 * menu
