@@ -3,7 +3,7 @@ title: 海边拾贝（二）- CSS篇
 date: 2025-3-22 10:24:16
 tags: 
   - 前端八股
-  - Html
+  - CSS
 category: 海边拾贝 
 description: 当你捡起一块知识碎片，并发现它和目前的体系相当契合后，会为此感到欣喜吗
 ---
