@@ -1199,8 +1199,8 @@ CDN:
     # gitalk:
     # gitalk_css:
     # giscus:
-    # instantpage:
-    # instantsearch:
+    instantpage: https://cdn.bootcdn.net/ajax/libs/instant.page/5.2.0/instantpage.min.js
+    instantsearch: https://cdn.bootcdn.net/ajax/libs/instantsearch.js/4.77.0/instantsearch.production.min.js
     # katex:
     # katex_copytex:
     # lazyload:

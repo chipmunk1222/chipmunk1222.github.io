@@ -1,12 +1,20 @@
 @font-face{
   font-family: 'jiyinghuipianheyuan';
-  src: url('https://testingcf.jsdelivr.net/npm/chipmunk-assets/font/jiyinghuipianheyuan.ttf') format('truetype');
+  src: url('https://testingcf.jsdelivr.net/npm/chipmunk-assets/font/jiyinghuipianheyuan.woff2') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'hanchanbanyuanti';
-  src: url('https://testingcf.jsdelivr.net/npm/chipmunk-assets/font/hanchanbanyuanti.ttf') format('truetype');
+  src: url('https://testingcf.jsdelivr.net/npm/chipmunk-assets/font/hanchanbanyuanti.woff2') format('truetype');
+  font-display: swap;
 }
+
+/* 
+@font-face {
+  font-family: 'hanchanbanyuanti';
+  src: url('/font/hanchanbanyuanti.woff2') format('truetype');
+} */
 
 :root {
   --trans-light: rgba(255, 255, 255, 0.5);
