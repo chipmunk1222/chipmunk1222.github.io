@@ -29,7 +29,7 @@ description: 使用vercel对hexo博客进行静态资源无服务器部署，并
 首先进入官网注册一个`Vercel`，没有账号不能直接登录，需要先行注册
 
 进入注册界面后，点击第一项为个人注册，填入用户名后直接通过`github`账号关联，也可以通过邮箱绑定
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741524773/Snipaste_2025-03-09_20-42-25_qbsqct.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741524773/Snipaste_2025-03-09_20-42-25_qbsqct.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_20-42-25_qbsqct.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_20-42-25_qbsqct.webp)
 {% note warning flat %}
 避坑：`vercel`并不支持`QQ`邮箱，建议使用谷歌邮箱注册
 {% endnote %}
@@ -37,16 +37,16 @@ description: 使用vercel对hexo博客进行静态资源无服务器部署，并
 ## 部署静态项目
 注册完毕后，进入`vercel`主界面，导入`github`账号，随后导入要部署的仓库
 
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741524774/Snipaste_2025-03-09_20-48-05_pv6dlz.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741524774/Snipaste_2025-03-09_20-48-05_pv6dlz.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_20-48-05_pv6dlz.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_20-48-05_pv6dlz.webp)
 查看信息是否正确，点击部署
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741524774/Snipaste_2025-03-09_20-50-10_aggf8l.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741524774/Snipaste_2025-03-09_20-50-10_aggf8l.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_20-50-10_aggf8l.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_20-50-10_aggf8l.webp)
 
 等待一段时间过后，项目就部署完毕了，此时`Vercel`会自动给你分配一个域名，只不过这个域名不是我们常识里的样子，而且国内可能会被墙，所以我们要将其绑定到“正常”的域名中
 
 部署完后应该会弹出一个`DashBoard`，点击进入，或点击头像，选择`DashBoard`
 
 进入后就是项目的工作台了，当状态栏显示`ready`就表示项目已经部署成功，点击右上角的`Domain`进入域名绑定页面
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741525330/Snipaste_2025-03-09_21-01-08_oo24oz.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741525330/Snipaste_2025-03-09_21-01-08_oo24oz.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-01-08_oo24oz.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-01-08_oo24oz.webp)
 
 接下来接入域名购买环节
 
@@ -54,21 +54,21 @@ description: 使用vercel对hexo博客进行静态资源无服务器部署，并
 
 ## 选择域名
 登录阿里云官网，选择左上角菜单，下滑直到找到"域名"栏，点击进入
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741526248/Snipaste_2025-03-09_21-13-29_jergg5.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741526248/Snipaste_2025-03-09_21-13-29_jergg5.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-13-29_jergg5.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-13-29_jergg5.webp)
 
 在域名栏中即可查询你想要的域名
 ## 实名认证
 点击进入购买域名界面，需要进行实名认证以及完善模板信息，点击右上角头像进行实名认证
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741526249/Snipaste_2025-03-09_21-14-25_u2bit6.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741526249/Snipaste_2025-03-09_21-14-25_u2bit6.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-14-25_u2bit6.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-14-25_u2bit6.webp)
 
 进入购买界面后点击创建模板
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741526249/Snipaste_2025-03-09_21-17-04_umaqua.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741526249/Snipaste_2025-03-09_21-17-04_umaqua.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-17-04_umaqua.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-17-04_umaqua.webp)
 {% note warning flat %}
 实名认证后需要上传审核，审核时间随拥挤程度而定，可能需要一定时间才能审核完毕
 {% endnote %}
 
 最后点击左上角菜单，找到域名列表，找到你刚找到的域名，点击解析，进入解析界面后先放着
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741526895/Snipaste_2025-03-09_21-27-42_ym4kmb.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741526895/Snipaste_2025-03-09_21-27-42_ym4kmb.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-27-42_ym4kmb.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-27-42_ym4kmb.webp)
 
 这样你就拥有了自己的专属域名了，最后一步就是绑定域名与`vercel`部署的资源了
 
@@ -76,13 +76,13 @@ description: 使用vercel对hexo博客进行静态资源无服务器部署，并
 
 ## 进入域名解析
 回到`veercel`中，在`Domain`中点击`Add`添加域名解析，输入你刚买的域名，也可以添加二级域名，比如`chipmunk.top`->`blog.chipmink.top`
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741527450/Snipaste_2025-03-09_21-35-49_dn19pa.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741527450/Snipaste_2025-03-09_21-35-49_dn19pa.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-35-49_dn19pa.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-35-49_dn19pa.webp)
 
 ## 绑定解析后的域名信息
 添加完后查看列表中的域名信息
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741527452/Snipaste_2025-03-09_21-36-58_qrwnl6.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741527452/Snipaste_2025-03-09_21-36-58_qrwnl6.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-36-58_qrwnl6.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-36-58_qrwnl6.webp)
 回到阿里云，在刚才打开的域名解析列表中点击添加记录，其中类型对应`CNAME`，主机记录对应二级域名，记录值为最后的`value`
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741527452/Snipaste_2025-03-09_21-36-35_uzijiy.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741527452/Snipaste_2025-03-09_21-36-35_uzijiy.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-36-35_uzijiy.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-36-35_uzijiy.webp)
 
 配置完后等待一段时间，`vercel`就会自动绑定对应的域名了
 {% note info flat %}
@@ -93,4 +93,4 @@ description: 使用vercel对hexo博客进行静态资源无服务器部署，并
 
 # 踩坑总结
 由于我的`vercel`是从`github page`上迁移过去的，而我`github page`是用的双分支模式，`source`为源码而`main`为部署分支，而`vercel`默认选择`main`分支，这就导致了部署错误，因为`vercel`会自动运行部署代码，因此需要部署源码，解决方法是在环境中将分支指定为`source`即可
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741535002/Snipaste_2025-03-09_23-41-54_iializ.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741535002/Snipaste_2025-03-09_23-41-54_iializ.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_23-41-54_iializ.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_23-41-54_iializ.webp)

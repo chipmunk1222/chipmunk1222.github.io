@@ -72,19 +72,19 @@ export const axiosInstance = axios.create({
 
 下面讲讲具体配置流程：
 1. 创建项目，从`github`中引入项目
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741417568/Snipaste_2025-03-08_11-41-53_nsombb.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741417568/Snipaste_2025-03-08_11-41-53_nsombb.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_11-41-53_nsombb.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_11-41-53_nsombb.webp)
 
 2. 添加`.env`环境变量（可以使用网站自带的`secret`添加，也可以直接在对应文件夹新建文件）
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741417569/Snipaste_2025-03-08_11-46-47_nogubl.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741417569/Snipaste_2025-03-08_11-46-47_nogubl.png)
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741417568/Snipaste_2025-03-08_11-47-45_dxbsso.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741417568/Snipaste_2025-03-08_11-47-45_dxbsso.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_11-46-47_nogubl.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_11-46-47_nogubl.webp)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_11-47-45_dxbsso.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_11-47-45_dxbsso.webp)
 
 3. 检查项目结构，启动项目，由于`replit`本身提供在线编辑，所以像在本地一样完善项目结构即可，然后`run`项目，当`webview`中跑通项目就证明成功了
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741417879/Snipaste_2025-03-08_15-10-36_d4k01q.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741417879/Snipaste_2025-03-08_15-10-36_d4k01q.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_15-10-36_d4k01q.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_15-10-36_d4k01q.webp)
 
 4. 虽然此时项目跑通了，但还没有结束，`replit`的免费计划并不能长期部署，也就是说当网站关闭后还是不能提供服务，因此需要`UptimeRobot`每隔一段时间向其发送请求，来保持其运行
 >注册`UptimeRobot`需要建议使用`google`浏览器，否则验证可能通不过
 
 5. 进入`UptimeRobot`后点击创建`monitor`
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741418430/Snipaste_2025-03-08_15-18-45_lhxmzs.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741418430/Snipaste_2025-03-08_15-18-45_lhxmzs.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_15-18-45_lhxmzs.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_15-18-45_lhxmzs.webp)
 监控项目的`URL`，这下就真的大功告成了
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741418429/Snipaste_2025-03-08_15-20-07_xvjggl.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741418429/Snipaste_2025-03-08_15-20-07_xvjggl.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_15-20-07_xvjggl.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/MERN_deploy/Snipaste_2025-03-08_15-20-07_xvjggl.webp)

@@ -51,18 +51,18 @@ algolia:
 注册并登录`algolia`官网
 ## 跳过引导
 新版本注册`algolia`后应该会先进入一个引导页面，不用管它，直接跳过
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-24-34_htxp2k.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-24-34_htxp2k.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-24-34_htxp2k.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-24-34_htxp2k.webp)
 >不得不说这个跳过按钮设置的很隐蔽，我最开始以为要在这里直接匹配网页，折腾了好久才发现只是个教程，可以直接跳过
 
 ## 创建索引
 进入数据库图标的导航页，输入名称创建项目索引，之后它将用来记录网页的搜索匹配信息
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-26-12_xoy3d5.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-26-12_xoy3d5.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-26-12_xoy3d5.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-26-12_xoy3d5.webp)
 
 ## 获取API
 进入设置页面并进入`Api Keys`页面
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-27-14_reylc3.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-27-14_reylc3.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-27-14_reylc3.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-27-14_reylc3.webp)
 获取`hexo-algoliasearch`需要的`api`,后回到`_config.yml`配置文件中
-![https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-28-39_kqsgtp.png](https://res.cloudinary.com/dobligy9s/image/upload/v1741512555/Snipaste_2025-03-09_17-28-39_kqsgtp.png)
+![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-28-39_kqsgtp.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/algolia_search/Snipaste_2025-03-09_17-28-39_kqsgtp.webp)
 
 # algolia配置项修改
 对`algolia`空缺的配置项分别填入上面获取的项，分别是：

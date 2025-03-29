@@ -62,10 +62,10 @@ social:
 # --------------------------------------
 
 # favicon: /img/favicon.png
-favicon: https://res.cloudinary.com/dobligy9s/image/upload/v1741523046/icon_enxtjc.png
+favicon: https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/title.png
 
 avatar:
-  img: https://res.cloudinary.com/dobligy9s/image/upload/v1741589610/avatar.v1_rfipna.png
+  img: https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/avatar.webp
   effect: false
 
 # Disable all banner images
@@ -101,8 +101,7 @@ footer_img: transparent
 
 # Website Background
 # Can set it to color or image url
-background: https://res.cloudinary.com/dobligy9s/image/upload/v1741684067/bg1_jxccih.jpg
-# background: https://res.cloudinary.com/dobligy9s/image/upload/v1741589681/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_14_mi1jbe.png
+background: https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/bg/default_bg1.webp
 # background: '#f7f9fe'
 # background: 'linear-gradient(to right top, #fdd5ff, #ffd6e7, #ffdfcf, #ffefc4, #f8ffcc)'
 
@@ -116,21 +115,13 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover: 
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684037/cover1_cbk9l0.jpg
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684037/cover3_wkqvfp.jpg
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684037/cover2_s76qcg.jpg
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684038/cover4_vzfigd.jpg
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684038/cover6_wsqo3g.jpg
-    - https://res.cloudinary.com/dobligy9s/image/upload/v1741684038/cover5_wgcqpy.jpg
+    # - https://cdn.jsdelivr.net/gh/chipmunk1222/AssetsRepo@main/img/cover/cover1.webp
+    - https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/cover/default_cover1.webp
+    - https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/cover/default_cover2.webp
+    - https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/cover/default_cover3.webp
+    - https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/cover/default_cover4.webp
+    - https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/cover/default_cover5.webp
 
-    # - /img/card/card1.png
-    # - /img/card/card2.png
-    # - /img/card/card3.png 
-    # - /img/card/card4.png
-    # - /img/card/card5.jpg
-    # - /img/card/card6.png
-    # - /img/card/card7.jpg
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images
 error_img:
@@ -141,7 +132,7 @@ error_img:
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: https://res.cloudinary.com/dobligy9s/image/upload/v1742094873/404_t2asp0.gif
+  background: https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/404_error.gif
 
 post_meta:
   page: # Home Page
@@ -364,7 +355,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/chipmunk1222
   card_announcement:
     enable: false
     content: This is my Blog
@@ -1106,7 +1097,8 @@ inject:
     - <link rel="stylesheet" href="/css/nav_menu.css"  media="defer" onload="this.media='all'">  # 导航栏样式
     - <link rel="stylesheet" href="/css/progress_bar.css"  media="defer" onload="this.media='all'">  # 加载条样式
     - <link rel="stylesheet" href="/css/page_wave.css"  media="defer" onload="this.media='all'">  # 文章页波浪
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/theme-chalk/index.css"> # 引入组件库(f12)
+    # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/theme-chalk/index.css"> # 引入组件库(f12)
+    - <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/element-ui/2.15.6/theme-chalk/index.css" type="text/css" rel="stylesheet" />
 
     - <link rel="stylesheet" href="/css/music.css"  media="defer" onload="this.media='all'">  # 音乐
     - <link rel="stylesheet" href="/css/anzhiyv.css"  media="defer" onload="this.media='all'">  # 安知鱼主题参数
@@ -1114,7 +1106,8 @@ inject:
     - <link rel="stylesheet" href="/css/popup.css"  media="defer" onload="this.media='all'"> # 弹窗
  
     # - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4732727_6plr38b09gk.css"  media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">   # 动态字体
+    # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">   # 动态字体
+    - <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome-animation/0.3.0/font-awesome-animation.min.css" type="text/css" rel="stylesheet" />
 
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
@@ -1122,24 +1115,26 @@ inject:
     - <script async src="//at.alicdn.com/t/c/font_4732727_1m21a74zx4o.js"></script>   # 阿里图标库
     # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script src="/js/title.js" defer></script> # 恶搞标题  
-    - <script src="/js/badage.js" defer></script>   # 顶部进度条
+    - <script src="/js/bdage.js" defer></script>   # 顶部进度条
     - <script src="/js/nav.js" defer></script>       # 导航栏
     - <script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox
     - <script src="/js/popup.js" defer></script>   # 背景弹窗
     - <script src="/js/random.js" defer></script>    # 随机访问功能 
     # - <script src="/js/prettier.js" defer></script>   # 代码美化
 
-    - <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
-    - <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+    # - <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+    # - <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+    - <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js"></script> # 引入VUE(f12)
+    - <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/element-ui/2.15.6/index.js" type="application/javascript"></script>
 
-    - <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script> # 引入Jquery
+    - <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script> # 引入Jquery
     - <script type="text/javascript" src="/js/rightmenu.js"></script> # 右键菜单 
     
     # 51la统计&灵雀统计
-    - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
-    - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-    - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>
-    - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
+    # - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+    # - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+    # - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>
+    # - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
 
     - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
@@ -1173,6 +1168,10 @@ CDN:
   custom_format:
 
   option:
+    # jquery: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js
+    # gittalk_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.css
+    # gittalk_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.js
+
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:
@@ -1188,15 +1187,15 @@ CDN:
     # canvas_ribbon:
     # click_heart:
     # clickShowText:
-    # disqusjs:
-    # disqusjs_css:
+    disqusjs: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqus.js
+    disqusjs_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqusjs.css
     # docsearch_css:
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:
     # fancybox_css:
     # fireworks:
-    # fontawesome:
+    fontawesome: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
     # gitalk:
     # gitalk_css:
     # giscus:
@@ -1216,16 +1215,16 @@ CDN:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    # pjax:
-    # sharejs:
-    # sharejs_css:
-    # snackbar:
-    # snackbar_css:
+    pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
+    sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
+    sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
+    snackbar: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js
+    snackbar_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css
     # translate:
     # twikoo:
     # typed:
     # utils:
-    # valine:
+    valine: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js
     # waline_css:
     # waline_js:
     countup_js: /js/countup.js
@@ -1278,7 +1277,8 @@ tag_plugins:
     placeholder: /img/link.png #link_card标签默认的图标图片
   CDN:
     anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    # jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    jquery: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js
     issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
     iconfont:  #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js

@@ -55,7 +55,7 @@
 
 /* 自定义加载条图像 */
 .loading-img {
-  background: url(https://res.cloudinary.com/dobligy9s/image/upload/v1741589610/avatar.v1_rfipna.png) no-repeat center center;
+  background: url(https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/avatar.webp) no-repeat center center;
   background-size: cover;
 }
 
