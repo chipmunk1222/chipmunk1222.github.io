@@ -1175,7 +1175,7 @@ CDN:
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js: 
-    algolia_search: https://cdn.bootcdn.net/ajax/libs/algoliasearch/4.24.0/algoliasearch-lite.umd.min.js
+    algolia_search: https://cdn.bootcdn.net/ajax/libs/algoliasearch/4.24.0/algoliasearch-lite.umd.js
     aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
     aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
     # artalk_css:
