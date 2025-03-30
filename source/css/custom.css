@@ -1,13 +1,11 @@
 @font-face{
   font-family: 'jiyinghuipianheyuan';
   src: url('https://testingcf.jsdelivr.net/npm/chipmunk-assets/font/jiyinghuipianheyuan.woff2') format('truetype');
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'hanchanbanyuanti';
   src: url('https://testingcf.jsdelivr.net/npm/chipmunk-assets/font/hanchanbanyuanti.woff2') format('truetype');
-  font-display: swap;
 }
 
 /* 
