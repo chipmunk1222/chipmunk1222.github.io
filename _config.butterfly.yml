@@ -304,26 +304,35 @@ footer_beautify:
   # runtime_css: https://www.fomal.cc/static/css/runtime.min.css 
   # 这是店长的 
   runtime_js: /js/bdage.js
-  runtime_css: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
+  runtime_css: /css/runtime.css
   # 徽标部分配置项
   swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:
     - link: https://hexo.io/ #徽标指向网站链接
       shields: https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo #徽标API
-      message: 博客框架为Hexo_v6.2.0 #徽标提示语
+      message: 博客框架为Hexo_v7.3.0 #徽标提示语
     - link: https://butterfly.js.org/
       shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender
-      message: 主题版本Butterfly_v4.3.1
+      message: 主题版本Butterfly_v5.0.0
     - link: https://vercel.com/
       shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel
-      message: 本站采用多线部署，主线路托管于Vercel
-    - link: https://dashboard.4everland.org/
-    # https://img.shields.io/badge/Hosted-4EVERLAND-3FE2C1?style=flat&logo=IPFS
-      shields: https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&logo=IPFS
-      message: 本站采用多线部署，备用线路托管于4EVERLAND
+      message: 本站采用静态网站部署，线路托管于Vercel
+    # - link: https://dashboard.4everland.org/
+    # # https://img.shields.io/badge/Hosted-4EVERLAND-3FE2C1?style=flat&logo=IPFS
+    #   shields: https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&logo=IPFS
+    #   message: 本站采用多线部署，备用线路托管于4EVERLAND
     - link: https://github.com/
       shields: https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub
       message: 本站项目由Github托管
+    - link: https://account.aliyun.com/
+      shields: https://img.shields.io/badge/Server-阿里云-FF6A00?style=flat&logo=alibabacloud
+      message: 本站服务器托管于阿里云
+    - link: https://icp.gov.moe/
+      shields: https://img.shields.io/badge/萌ICP备-20255012号-ff3399?style=flat&logo=data:image/png;base64,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
+      message: 本站萌ICP备案号为20255012号
+    - link: https://www.qiniu.com/
+      shields: https://img.shields.io/badge/CDN-七牛云CDN-3693F3?style=flat&logo=icloud
+      message: 本站使用七牛云CDN进行全站加速
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可

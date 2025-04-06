@@ -60,7 +60,6 @@ npm i react react-dom react-router-dom axios zustand lucide-react react-hot-toas
 1. 首先确保安装了`tailwind`和`daisyui`的依赖
 2. 使用`npx tailwindcss init`命令初始化项目结构，此时项目中应该有`tailwind.config.js`配置文件
 3. 修改配置文件如下，即顺便直接配置了`daisyui`
-
 ```js
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
@@ -77,9 +76,7 @@ export default {
 	},
 };
 ```
-
 4. 最后在`index.css`中添加如下引用并在`main.jsx`中导入即可全局使用`tailwindcss`以及`daisyui`
-
 ```js
 @tailwind base;
 @tailwind components;
@@ -108,7 +105,6 @@ export default {
 使用`react-router-dom`进行路由配置，需要注意的是使用`router`前需确保安装了`react`和`react-dom`依赖
 
 1. 首先使用`<BrowserRouter></BrowserRouter>`确定路由类型，在`main.jsx`中包裹主体部分
-
 ```js
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -125,10 +121,8 @@ createRoot(document.getElementById("root")).render(
 	</StrictMode>
 );
 ```
-
-1. 创建路由实例以及配置路由页面
+2. 创建路由实例以及配置路由页面
    创建如下所示的路由实例，将应用分为如下几个页面
-
 ```js
 return (
 	<div data-theme={theme}>
@@ -159,14 +153,11 @@ return (
 	</div>
 );
 ```
-
 {% note primary flat %}
 可以看到在上述样例中，通过对用户身份`authUser`的验证进行了路由跳转的重定向，而不是直接定向到对应界面，这使得路由跳转更加符合逻辑
 {% endnote %}
-
-随后对`<NavBar>`中的导航添加点击事件，使用`<Link>`即可进行路由页面的跳转
+3. 随后对`<NavBar>`中的导航添加点击事件，使用`<Link>`即可进行路由页面的跳转
 `<NavBar>`组件内部结构如下，同样根据用户身份验证变化
-
 ```js
 import React from "react";
 import { useAuthStore } from "../store/useAuthStore";
