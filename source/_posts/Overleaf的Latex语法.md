@@ -12,7 +12,7 @@ description: 快速上手Overleaf中的常用Latex语法，Overleaf中的Latex�
 {% endtip %}
 
 # 一键配置
-复制以下代码来一键配置初始化论文文档
+复制以下代码来一键配置初始化论文文档，记得将右上角菜单中的编译器改为`LuaLatex`，以使用中文编写
 ```latex
 \documentclass{article}
 %-- coding: UTF-8 --
