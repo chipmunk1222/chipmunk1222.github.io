@@ -11,6 +11,8 @@ description: 快速上手Overleaf中的常用Latex语法，Overleaf中的Latex�
 `Overleaf`，一款免费的在线云编辑器，其使用`Latex`作为编辑语言，只要掌握一些基础的语法，就可以地创作出布局精良的论文，再也无须为论文排版而烦恼，下面就来介绍下其中的一些常用的语法格式
 {% endtip %}
 
+`Overleaf`[官方网址](https://www.overleaf.com/)
+
 # 一键配置
 复制以下代码来一键配置初始化论文文档，记得将右上角菜单中的编译器改为`LuaLatex`，以使用中文编写
 ```latex
