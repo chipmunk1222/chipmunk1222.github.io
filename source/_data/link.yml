@@ -6,7 +6,11 @@
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、简单且强大的网志框架
       siteshot: https://source.fomal.cc/siteshot/hexo.io.jpg
-      
+    - name: Akilar
+      link: https://akilar.top
+      avatar: /img/siteicon/favicon.png
+      descr: 欢迎光临糖果屋
+
 - class_name: 2.友情链接
   class_desc: 一些好朋友~~
   link_list:
