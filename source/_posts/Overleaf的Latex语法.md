@@ -41,8 +41,8 @@ description: 快速上手Overleaf中的常用Latex语法，Overleaf中的Latex�
 \usepackage{amsmath}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\usepackage[backend=biber]{biblatex} % 引入 biblatex 宏包
-\addbibresource{references.bib} % 指定参考文献文件
+\usepackage{cite}
+
 % 自定义代码块样式
 \lstset{
     breaklines=true, % 自动换行
@@ -75,7 +75,9 @@ description: 快速上手Overleaf中的常用Latex语法，Overleaf中的Latex�
 
 正文内容...
 
-\printbibliography % 显示参考文献列表
+\bibliographystyle{unsrt}
+\bibliography{references}
+ % 显示参考文献列表
 \end{document}
 ```
 
@@ -260,14 +262,87 @@ Hello, world!           % 正文内容
 ```
 
 ## 参考文献
+这里提供两种使用参考文献的方式，推荐使用第一种`cite`，因为其相对简洁，并且提供一种自定义列表，即你可以根据不同的标准定义参考文献格式，相对来说`biblatex`包则需要引入格外配置来支持增强功能
+
+{% tabs references %}
+<!-- tab 使用cite包(推荐)@icon -->
+1. 引入必要的宏包
+```latex
+\usepackage{cite}
+
+```
+2. 创建 `.bib` 文件
+在 `Overleaf` 的项目中，新建一个名为 `references.bib` 的文件（确保`.bib`格式即可）
+文件内容格式：该文件为bibTeX格式，引用时一般可以直接选择用该方式引用
+```bibtex
+@book{lamport1994,
+  author    = {Leslie Lamport},
+  title     = {LaTeX: A Document Preparation System},
+  publisher = {Addison-Wesley},
+  year      = {1994},
+  edition   = {2nd},
+}
+
+@article{einstein1905,
+  author    = {Albert Einstein},
+  title     = {Zur Elektrodynamik bewegter K{\"o}rper},
+  journal   = {Annalen der Physik},
+  volume    = {322},
+  number    = {10},
+  pages     = {891--921},
+  year      = {1905},
+  publisher = {Wiley-VCH},
+}
+```
+3. 在正文中引用文献
+使用 `\cite{引用标签} `在正文中插入参考文献。例如
+```latex
+爱因斯坦的广义相对论首次出现在 \cite{einstein1905}。
+```
+
+4. 显示参考文献列表
+```latex
+% 在文件结尾引用参考文献
+\bibliographystyle{unsrt}
+\bibliography{references}
+```
+指定格式：
+   - plain，按字母的顺序排列，比较次序为作者、年度和标题
+   - unsrt，样式同plain，只是按照引用的先后排序
+   - alpha，用作者名首字母+年份后两位作标号，以字母顺序排序
+   - abbrv，类似plain，将月份全拼改为缩写，更显紧凑
+   - ieeetr，国际电气电子工程师协会期刊样式
+   - acm，美国计算机学会期刊样式
+   - siam，美国工业和应用数学学会期刊样式
+   - apalike，美国心理学学会期刊样式
+>来源：[参考文章](https://blog.csdn.net/qq_40302165/article/details/120511212)
+1. 完整代码示例
+```latex
+\documentclass{article}
+\usepackage[utf8]{ctex}
+\usepackage{cite}
+
+\begin{document}
+这是参考文献的引用示例 \cite{lamport1994} 和 \cite{einstein1905}。
+
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}
+```
+
+<!-- endtab -->
+<!-- tab 使用biblatex包@icon -->
 1. 引入必要的宏包
 ```latex
 \usepackage[backend=biber]{biblatex} % 使用 biblatex 管理参考文献
 
 \addbibresource{references.bib} % 指定参考文献的 .bib 文件
 ```
-2. 创建 `.bib` 文件：在 `Overleaf` 的项目中，新建一个名为 `references.bib` 的文件。
-```latex
+2. 创建 `.bib` 文件
+在 `Overleaf` 的项目中，新建一个名为 `references.bib` 的文件（确保`.bib`格式即可）
+文件内容格式：该文件为bibTeX格式，引用时一般可以直接选择用该方式引用
+```bibtex
 @book{lamport1994,
   author    = {Leslie Lamport},
   title     = {LaTeX: A Document Preparation System},
@@ -308,3 +383,6 @@ Hello, world!           % 正文内容
 \printbibliography % 显示参考文献列表
 \end{document}
 ```
+
+<!-- endtab -->
+{% endtabs %}
