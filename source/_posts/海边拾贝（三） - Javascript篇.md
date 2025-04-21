@@ -89,6 +89,48 @@ function deepClone(obj) {
 
 >以`new`的创建为例，使用`apply`改变`this`指向后，就可以通过`this.data = data`添加数据了
 {% endfolding %}
+
+# 类vs普通函数
+{% folding blue , 点击查看详情 %}
+
+相比于其他语言，在`javascript`中，类和普通函数的关系只能“独特”两字来形容：
+我们都知道，`javascript`的独特对象创建机制，即除那几个原始类型之外，其余所有类型本质上都是引用类型，由`object`层层创建，子类型初始化依附于父类型的构造函数(`constructor`)，内容依附于原型（`prototype`），而这种实例被逐层创建的整套链条被称为原型链。
+
+从这个角度来看，类（`class`）的存在似乎有点跳脱于这套体系之外，这到底是个什么东西？
+类的概念是`ES6`之后被引入的，一言以蔽之，类本质上就是原型构造函数的语法糖，`class`提供了一种更加直观和简洁的方式来描述对象实例的创建和继承，`class`的底层仍然通过构造函数和原型来实现，下面来看一个由类`new`实例的具体样例：
+```js
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    sayHello() {
+        console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+
+const person = new Person('Alice', 25);
+person.sayHello(); // 输出: Hi, my name is Alice and I am 25 years old.
+```
+
+上面这段代码实现的功能等价于以下代码：
+```js
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.sayHello = function() {
+    console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
+};
+
+const person = new Person('Alice', 25);
+person.sayHello(); // 输出: Hi, my name is Alice and I am 25 years old.
+```
+这样看应该就非常直观了，相比之下，用类进行构造更加符合模块化的理念
+
+{% endfolding %}
 # 箭头函数和普通函数的区别
 {% folding blue , 点击查看详情 %}
 1. `this`指向：箭头函数的`this`指向只取决于其定义的位置，普通函数的`this`指向取决于其被调用的位置
