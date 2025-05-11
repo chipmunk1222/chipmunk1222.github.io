@@ -12,9 +12,14 @@ category: 技术教程
 description: 使用vercel对hexo博客进行静态资源无服务器部署，并绑定阿里云的域名
 ---
 
-{% tip cogs %}
+{% tip bolt %}
 本文将从头讲述使用vercel对静态资源进行部署的流程，以及从域名购买到绑定，让你拥有一个真正意义上的“名片网站”
 {% endtip %}
+
+{% tip cogs %}
+如果要看如何使用服务器部署个人博客，见[阿里云服务器部署hexo博客](https://chipmunk.top/posts/阿里云服务器部署hexo博客)
+{% endtip %}
+
 
 # 为什么需要部署host？
 简单讲讲为什么需要部署，因为部署代码的网站本身差别不大，以`vercel`为例，讲讲`web`静态资源部署的好处
@@ -48,7 +53,7 @@ description: 使用vercel对hexo博客进行静态资源无服务器部署，并
 进入后就是项目的工作台了，当状态栏显示`ready`就表示项目已经部署成功，点击右上角的`Domain`进入域名绑定页面
 ![https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-01-08_oo24oz.webp](https://testingcf.jsdelivr.net/npm/chipmunk-assets/img/blog/vercel/Snipaste_2025-03-09_21-01-08_oo24oz.webp)
 
-接下来接入域名购买环节
+接下来进入域名购买环节
 
 # 购买专属你的域名
 

@@ -151,7 +151,7 @@ deploy:
   # repo: git@47.97.29.47:/home/git/blog.git
   repo: git@chipmunk.top:/var/repo/hexo.git
   # branch: main
-  branch: main
+  branch: master
 
 server:
   port: 4000
