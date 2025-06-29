@@ -232,7 +232,7 @@ ls -l /etc/nginx/ssl/
 ```sh
 sudo certbot certonly --nginx -d <你的域名>
 ```
-如果你希望自动配置`nginx`
+如果你希望自动配置`nginx`（前提是已经做了相应域名的`nginx`监听）
 ```sh
 sudo certbot --nginx -d <你的域名>
 ```
