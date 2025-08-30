@@ -1111,7 +1111,7 @@ inject:
     - <link rel="stylesheet" href="/css/progress_bar.css"  media="defer" onload="this.media='all'">  # 加载条样式
     - <link rel="stylesheet" href="/css/page_wave.css"  media="defer" onload="this.media='all'">  # 文章页波浪
     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/theme-chalk/index.css"> # 引入组件库(f12)
-    - <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/element-ui/2.15.6/theme-chalk/index.css" type="text/css" rel="stylesheet" />
+    - <link href="https://cdn.bootcdn.net/element-ui/2.15.6/theme-chalk/index.css" type="text/css" rel="stylesheet" />
 
     - <link rel="stylesheet" href="/css/music.css"  media="defer" onload="this.media='all'">  # 音乐
     - <link rel="stylesheet" href="/css/anzhiyv.css"  media="defer" onload="this.media='all'">  # 安知鱼主题参数
@@ -1120,7 +1120,7 @@ inject:
  
     # - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4732727_6plr38b09gk.css"  media="defer" onload="this.media='all'">
     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">   # 动态字体
-    - <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome-animation/0.3.0/font-awesome-animation.min.css" type="text/css" rel="stylesheet" />
+    - <link href="https://cdn.bootcdn.net/font-awesome-animation/0.3.0/font-awesome-animation.min.css" type="text/css" rel="stylesheet" />
 
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
@@ -1137,10 +1137,10 @@ inject:
 
     # - <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
     # - <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
-    - <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js"></script> # 引入VUE(f12)
-    - <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/element-ui/2.15.6/index.js" type="application/javascript"></script>
+    - <script src="https://cdn.bootcdn.net/vue/2.6.14/vue.min.js"></script> # 引入VUE(f12)
+    - <script src="https://cdn.bootcdn.net/element-ui/2.15.6/index.js" type="application/javascript"></script>
 
-    - <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script> # 引入Jquery
+    - <script src="https://cdn.bootcdn.net/jquery/3.6.0/jquery.min.js"></script> # 引入Jquery
     - <script type="text/javascript" src="/js/rightmenu.js"></script> # 右键菜单 
     
     # 51la统计&灵雀统计
@@ -1181,16 +1181,16 @@ CDN:
   custom_format:
 
   option:
-    # jquery: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js
-    # gittalk_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.css
-    # gittalk_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.js
+    # jquery: https://cdn.bootcdn.net/jquery/3.6.0/jquery.min.js
+    # gittalk_css: https://cdn.bootcdn.net/gitalk/1.7.2/gitalk.min.css
+    # gittalk_js: https://cdn.bootcdn.net/gitalk/1.7.2/gitalk.min.js
 
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js: 
     algolia_search: https://cdn.bootcdn.net/ajax/libs/algoliasearch/4.24.0/algoliasearch-lite.umd.js
-    aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
-    aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
+    aplayer_css: https://cdn.bootcdn.net/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://cdn.bootcdn.net/aplayer/1.10.1/APlayer.min.js
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -1200,15 +1200,16 @@ CDN:
     # canvas_ribbon:
     # click_heart:
     # clickShowText:
-    disqusjs: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqus.js
-    disqusjs_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqusjs.css
+    disqusjs: https://cdn.bootcdn.net/disqusjs/1.3.0/disqus.js
+    disqusjs_css: https://cdn.bootcdn.net/disqusjs/1.3.0/disqusjs.css
     # docsearch_css:
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:
     # fancybox_css:
     # fireworks:
-    fontawesome: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
+    # fontawesome: https://cdn.bootcdn.net/font-awesome/6.0.0/css/all.min.css
+    fontawesome: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.0.0/css/all.min.css
     # gitalk:
     # gitalk_css:
     # giscus:
@@ -1216,7 +1217,8 @@ CDN:
     instantsearch: https://cdn.bootcdn.net/ajax/libs/instantsearch.js/4.77.0/instantsearch.production.min.js
     # katex:
     # katex_copytex:
-    lazyload: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js
+    # lazyload: https://cdn.bootcdn.net/vanilla-lazyload/17.3.1/lazyload.iife.min.js
+    lazyload: https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.3.1/lazyload.iife.min.js
     # local_search: true
     # main:
     # main_css:
@@ -1231,13 +1233,13 @@ CDN:
     pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
-    snackbar: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js
-    snackbar_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css
+    snackbar: https://cdn.bootcdn.net/node-snackbar/0.1.16/snackbar.min.js
+    snackbar_css: https://cdn.bootcdn.net/ajax/libs/node-snackbar/0.1.16/snackbar.min.css
     # translate:
     # twikoo:
     # typed:
     # utils:
-    valine: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js
+    valine: https://cdn.bootcdn.net/ajax/libs/valine/1.4.16/Valine.min.js
     # waline_css:
     # waline_js:
     countup_js: /js/countup.js
@@ -1291,7 +1293,7 @@ tag_plugins:
   CDN:
     anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
     # jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
-    jquery: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js
+    jquery: https://cdn.bootcdn.net/jquery/3.6.0/jquery.min.js
     issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
     iconfont:  #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js

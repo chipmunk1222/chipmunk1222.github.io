@@ -143,6 +143,10 @@ npm publish
 自从`jsdelivr`炸了之后，在`npm`提供商的选择方面还真是增加了不小的工作量，本站`CDN`服务主要参考洪哥的方案，即优先字节，如果没有找到则再去别的站点，如`bootCDN`等
 {% link Butterfly CDN链接更改指南，替换jsdelivr提升访问速度, https://cdn.bytedance.com/?query=react-instantsearch-theme-algolia&version=4.5.2, imgUrl(option) %}
 
+{% note warning flat %}
+由于黑产滥用，字节`CDN`前端静态资源库已于2025年8月全面下线，下文中所有`lf`开头的资源包可换为`cdn.bootcdn.net`
+{% endnote %}
+
 ## algolia_search
 
 ```
