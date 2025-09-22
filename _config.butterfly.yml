@@ -1142,7 +1142,8 @@ inject:
     
     - <script src="https://cdn.bootcdn.net/element-ui/2.15.6/index.js" type="application/javascript"></script>
 
-    - <script src="https://cdn.bootcdn.net/jquery/3.6.0/jquery.min.js"></script> # 引入Jquery
+    - <script src="https://code.bdstatic.com/npm/jquery@3.6.0/dist/jquery.min.js"></script> # 引入Jquery
+    # - <script src="/js/jquery.min.js"></script> # 引入Jquery
     - <script type="text/javascript" src="/js/rightmenu.js"></script> # 右键菜单 
     
     # 51la统计&灵雀统计
@@ -1295,7 +1296,7 @@ tag_plugins:
   CDN:
     anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
     # jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
-    jquery: https://cdn.bootcdn.net/jquery/3.6.0/jquery.min.js
+    jquery: https://code.bdstatic.com/npm/jquery@3.6.0/dist/jquery.min.js
     issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
     iconfont:  #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
