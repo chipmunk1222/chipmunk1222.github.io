@@ -1192,8 +1192,10 @@ CDN:
     # activate_power_mode:
     # algolia_js: 
     algolia_search: https://cdn.bootcdn.net/ajax/libs/algoliasearch/4.24.0/algoliasearch-lite.umd.js
-    aplayer_css: https://cdn.bootcdn.net/aplayer/1.10.1/APlayer.min.css
-    aplayer_js: https://cdn.bootcdn.net/aplayer/1.10.1/APlayer.min.js
+    # aplayer_css: https://cdn.bootcdn.net/aplayer/1.10.1/APlayer.min.css
+    aplayer_css: https://code.bdstatic.com/npm/aplayer@1.10.1/dist/APlayer.min.css
+    # aplayer_js: https://cdn.bootcdn.net/aplayer/1.10.1/APlayer.min.js
+    aplayer_js: https://code.bdstatic.com/npm/aplayer@1.10.1/dist/APlayer.min.js
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -1236,8 +1238,8 @@ CDN:
     pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
-    snackbar: https://cdn.bootcdn.net/node-snackbar/0.1.16/snackbar.min.js
-    snackbar_css: https://cdn.bootcdn.net/ajax/libs/node-snackbar/0.1.16/snackbar.min.css
+    snackbar: https://code.bdstatic.com/npm/node-snackbar@0.1.16/dist/snackbar.min.js
+    snackbar_css: https://code.bdstatic.com/npm/node-snackbar@0.1.16/dist/snackbar.min.css
     # translate:
     # twikoo:
     # typed:
