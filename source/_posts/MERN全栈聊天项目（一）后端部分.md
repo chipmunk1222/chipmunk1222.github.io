@@ -9,7 +9,7 @@ tags:
   - mongoDB
   - socket.io
   - cors
-description: 来源于油管的全栈聊天项目，应用了如今全栈开发中非常流行了MERN架构，即，mongodb+express+react+nodejs，后端架构介绍
+description: 来源于油管的全栈聊天项目，应用了如今全栈开发中非常流行了MERN架构，即，mongodb+express+react+nodejs，本系列文章对其中某些重要知识点和库的使用进行总结，并不涉及完整的项目代码，该小节为该项目的后端架构介绍
 category: 项目总结
 ---
 

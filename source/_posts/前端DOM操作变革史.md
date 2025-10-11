@@ -139,7 +139,7 @@ const MyComponent = Vue.extend(Component);
 const vm = new MyComponent();
 vm.$mount('#app');
 ```
-### ref接口
+### Ref
 通过`ref`接口可以获取到组件的`DOM`节点，从而实现对`DOM`节点的操作，一般适用于组件内部
 ```vue
 <template>

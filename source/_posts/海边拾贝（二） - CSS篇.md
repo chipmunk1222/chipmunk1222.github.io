@@ -56,7 +56,7 @@ description: 收集散落各处的知识碎片，并将这些碎片拼合起来�
 
 >常见的伪类和伪元素：
 1. 伪类：`a:hover`、`input:focus`、`input:checked`、`li:nth-child()`、`li:nth-of-type()`
-2. 伪元素：`a::before`、`a::after`
+2. 伪元素：`a::before`、`a::after`、`p::first-letter`、`input::placeholder`
 
 >反直觉的注意事项：`:nth-child()` 和 `nth-of-type()`是相对于父元素的选择，如果要选择子元素，对伪类用子代选择器
 {% endfolding %}
@@ -90,7 +90,7 @@ description: 收集散落各处的知识碎片，并将这些碎片拼合起来�
 # 为什么要清除浮动？如何清除浮动？
 {% folding blue , 点击查看详情 %}
 浮动是一种常见的布局方式，用以将一系列元素统一排列或对其，但是，容器不设高度且子元素浮动时，容器高度不能被子元素撑开。此时子元素就会被撑到容器外面，造成“高度塌陷”
-> 本质原因可以理解为浮动和absolute定位具有一定的共性
+> 本质原因可以理解为浮动和absolute定位具有一定的共性，都同属于`BFC`，会脱离原本的文档流
 清除浮动的方式：
 1. 使用`clear`属性：`clear:both`清除浮动
 2. 使用`overflow:hidden`：将超出部分隐藏

@@ -10,7 +10,7 @@ description: 收集散落各处的知识碎片，并将这些碎片拼合起来�
 
 # js数据类型一览
 {% folding blue , 点击查看详情 %}
-首先明确一个概念：`js`的数据类型有两种，分别是原始数据类型和引用数据类型，其中，原始数据类型是有浏览器引擎自行创建的，而引用数据类型都是对象或者对象的变体，是通过函数原型以及原型链创建的，现在，我们再来区分一下这些数据类型
+首先明确一个概念：`js`的数据类型有两种，分别是原始数据类型和引用数据类型，其中，原始数据类型是由浏览器引擎自行创建的，而引用数据类型都是对象或者对象的变体，是通过函数原型以及原型链创建的，现在，我们再来区分一下这些数据类型
 1. 原始数据类型包括：`String`、`Number`、`Boolean`、`null`、`undefined`、`Symbol(ES6)`、`bigInt(ES6)`
 2. 引用数据类型为`Object`和其他（其他包括原始数据类型之外的类型，其本质都是`Object`对象的变体）
 3. 区分两者的另一个方式是看其存储位置，其中，原始数据类型存储在栈中，直接访问；引用数据类型存储在堆中，通过地址引用访问
@@ -24,7 +24,7 @@ description: 收集散落各处的知识碎片，并将这些碎片拼合起来�
 3. `Object.prototype.toString.call()`：返回对象类型
 4. `constuctor`：返回对象构造函数原型
 5. `isArray`、`isNaN`等：特定的静态方法
-{% endfolding %}
+{% endfolding %} 
 
 # 深拷贝、浅拷贝及其使用场景
 {% folding blue , 点击查看详情 %}
@@ -166,7 +166,7 @@ person.sayHello(); // 输出: Hi, my name is Alice and I am 25 years old.
 4. 异步计时器：
   - 定时器：`setTineout(fn,during)`
   - 计时器：`setInterval(fn,interval)`
-{% endfolding %}
+{% endfolding %} 
 # localstorage、sessionstorage和cookie的区别
 {% folding blue , 点击查看详情 %}
 1. `localstorage`是长期存储，适用于需要长期存储数据的地方
@@ -177,7 +177,7 @@ person.sayHello(); // 输出: Hi, my name is Alice and I am 25 years old.
 {% folding blue , 点击查看详情 %}
 1. 块级作用域：`let`和`const`的概念
 2. 模板字符串：`${}`模板字符串
-3. 箭头函数：~~箭头函数竟然是ES6后的特性~~
+3. 箭头函数：~~每天都在用的箭头函数是ES6后的特性噢~~
 4. 解构赋值
 5. 扩展运算符
 6. `Promise`期约

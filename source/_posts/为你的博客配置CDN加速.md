@@ -87,7 +87,7 @@ description: 通过配置CDN来实现博客的静态资源加速
 3. 在该文件夹中打开终端，分别执行下列命令，初始化`npm`
 
 ```bash
-#切换npm原生源
+# 切换npm原生源
 npm config set registry https://registry.npmjs.org
 # 仅第一次使用需要添加用户，之后会提示你输入你的npm账号密码以及注册邮箱
 npm adduser
