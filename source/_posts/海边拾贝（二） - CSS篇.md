@@ -105,3 +105,24 @@ description: 收集散落各处的知识碎片，并将这些碎片拼合起来�
 3. `text-overflow:ellipsis`：设置超出的文字显示省略号
 通过以上方式即可在文字容器上实现文字的省略号显示
 {% endfolding %}
+
+# 深入理解flex弹性盒模型的宽度分配
+{% folding blue , 点击查看详情 %}
+决定弹性盒模型宽度分配的因素有：
+1. `width`:设置弹性盒模型的宽度
+2. `flex-basis`:设置弹性盒模型的初始宽度
+3. `flex-grow`:设置弹性盒模型剩余空间的分配比例
+4. `flex-shrink`:决定弹性盒已有空间的收缩比例
+规则：`flex:<flex-grow> <flex-shrink> <flex-basis>`(默认为`flex:0 1 auto`)
+计算规则：初始宽度 + 伸缩比例
+初始宽度：`flex-basis`的值，如果未设置，则为`auto`，使用容器宽度`width`
+伸缩比例：
+- 如果父容器宽度大于弹性盒模型的总宽度，则`flex-grow`生效，根据子容器`flex-grow`比例分配剩余空间
+- 如果父容器宽度小于弹性盒模型的总宽度，则`flex-shrink`生效，根据子容器`flex-shrink`比例对每个容器进行收缩
+
+其余`flex`属性：
+1. `flex-direction`:设置弹性盒模型的排列方向
+2. `flex-wrap`:设置弹性盒模型的换行方式
+3. `justify-content`:设置弹性盒模型的对齐方式
+4. `align-items`:设置弹性盒模型的对齐方式
+{% endfolding %}

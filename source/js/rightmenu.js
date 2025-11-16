@@ -258,6 +258,7 @@ function addLongtabListener(target, callback) {
     }, 380); // 超时器能成功执行，说明是长按
   };
 
+  
   target.ontouchmove = () => {
     clearTimeout(timer); // 如果来到这里，说明是滑动
     timer = 0;

@@ -145,8 +145,7 @@ person.sayHello(); // 输出: Hi, my name is Alice and I am 25 years old.
 `js`脚本任务分为4个优先级：
 1. 同步任务，所有同步脚本
 2. 微队列：`Promise`任务的载体
-3. 宏队列（交互队列）：存储外部点击事件等交互任务
-4. 回调队列：存储`setTimeout`等回调函数
+3. 宏队列：存储`setTimeout`等回调函数、页面`UI`渲染等
 
 任务没有优先级划分，只有不同队列存在优先级划分
 {% endfolding %}
@@ -167,6 +166,30 @@ person.sayHello(); // 输出: Hi, my name is Alice and I am 25 years old.
   - 定时器：`setTineout(fn,during)`
   - 计时器：`setInterval(fn,interval)`
 {% endfolding %} 
+# 页面登录流程
+{% folding blue , 点击查看详情 %}
+1. 用户输入用户名和密码
+2. 前端对数据进行校验并调用登录`API`
+3. 后端验证后返回`JWT`
+4. 前端保存`JWT`到`localStorage`或`cookie`中
+5. 前端每次请求时携带`JWT`，后端验证`JWT`的合法性
+{% endfolding %}
+# JWT的结构和优势
+{% folding blue , 点击查看详情 %}
+- `JWT`的用处：用于存储用户身份信息，实现无状态的用户认证
+- 结构：`header.payload.signature`
+- **header：**加密算法与类型
+- **payload：**用户数据，包括用户身份、过期时间等
+- **signature：**签名，用于验证`JWT`的合法性
+
+`JWT`的一些隐患：
+1. 安全问题：有些加密算法不安全，容易被破解
+2. `JWT`超出前端存储：`JWT`的大小有限制，不适合存储大量数据
+
+解决方案：
+1. 安全问题：使用非对称加密，保证数据的安全性
+2. `JWT`超出前端存储：使用`sessionstorage`或`cookie`存储、精简`JWT`数据
+{% endfolding %}
 # localstorage、sessionstorage和cookie的区别
 {% folding blue , 点击查看详情 %}
 1. `localstorage`是长期存储，适用于需要长期存储数据的地方
